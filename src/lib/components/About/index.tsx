@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { FC } from "react";
 import { scaleAnElementVariants } from "../../../constants/Animations";
 import { SKILLS } from "../../../constants/Skills";
+import { Experience } from "../Experience/Experience";
 import classes from "./About.module.css";
 
 export const About: FC = () => {
@@ -41,7 +42,7 @@ export const About: FC = () => {
         variants={scaleAnElementVariants()}
         className={classes.skills}
       >
-        <h1 className={classes.heading}># What I work with?</h1>
+        <h2 className={classes.heading}># What I work with?</h2>
         <div className={classes.skillsList}>
           {SKILLS.map((skill) => (
             <div
@@ -54,6 +55,16 @@ export const About: FC = () => {
             </div>
           ))}
         </div>
+      </motion.div>
+      <br />
+      <br />
+      <motion.div
+        initial={"hidden"}
+        whileInView={"visible"}
+        variants={scaleAnElementVariants()}
+      >
+        <h2 className={classes.heading}># My professional experience</h2>
+        <Experience />
       </motion.div>
     </div>
   );

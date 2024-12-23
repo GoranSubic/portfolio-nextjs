@@ -1,0 +1,27 @@
+.list {
+  @apply m-4 border-l-2 border-blue-600;
+}
+
+.itemWrapper {
+  @apply md:flex;
+}
+
+.iconWrapper {
+  @apply flex items-center justify-center w-6 h-6 p-1.5 -ml-3 bg-blue-600 rounded-full;
+}
+
+.contentWrapper {
+  @apply max-w-md p-4 mb-10 ml-4 bg-gray-100 rounded-lg shadow-lg md:w-full;
+}
+
+.contentHeadingWrapper {
+  @apply mb-2 text-sm font-semibold text-blue-900;
+}
+
+.content {
+  @apply text-black;
+}
+
+.duration {
+  @apply text-gray-500 text-xs mt-1;
+}

@@ -7,7 +7,7 @@
 }
 
 .greetingMultiLingual::before {
-  content: "Hello";
+  content: "Zdravo";
   animation: greetingMsgAnimation infinite 20s;
 }
 

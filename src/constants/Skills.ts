@@ -1,6 +1,7 @@
 import {
   SiSymfony,
   SiLaravel,
+  SiZend,
   SiVuedotjs,
   SiTailwindcss,
   SiNodedotjs,
@@ -13,11 +14,12 @@ import {
 export const SKILLS = [
   { name: "Symfony", component: SiSymfony },
   { name: "Laravel", component: SiLaravel },
+  { name: "Zend", component: SiZend },
+  { name: "TypeScript", component: SiTypescript },
   { name: "NodeJS", component: SiNodedotjs },
   { name: "ExpressJS", component: SiExpress },
   { name: "ReactJS", component: SiReact },
   { name: "NextJS", component: SiNextdotjs },
   { name: "VueJS", component: SiVuedotjs },
-  { name: "TypeScript", component: SiTypescript },
   { name: "TailwindCSS", component: SiTailwindcss },
 ];
