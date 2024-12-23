@@ -1,0 +1,41 @@
+.root {
+  @apply flex-1 text-justify;
+}
+
+.heading {
+  @apply mb-4 text-2xl font-semibold text-blue-300;
+}
+
+.skillsList {
+  @apply flex flex-wrap px-4 border-2 border-white;
+}
+
+.skillWrapper {
+  @apply flex items-center w-1/2 gap-4 my-2;
+}
+
+.skillWrapper p {
+  @apply whitespace-nowrap;
+}
+
+.link {
+  @apply font-semibold underline;
+}
+
+.link:hover {
+  @apply text-blue-300 transition-all duration-300;
+}
+
+.orText {
+  @apply relative text-center;
+}
+
+.orText::before {
+  @apply block w-1/3 h-0.5 bg-slate-400 left-8 top-1/2 absolute;
+  content: "";
+}
+
+.orText::after {
+  @apply block w-1/3 h-0.5 bg-slate-400 right-8 top-1/2 absolute;
+  content: "";
+}

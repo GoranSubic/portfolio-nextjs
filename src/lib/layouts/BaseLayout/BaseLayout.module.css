@@ -1,0 +1,12 @@
+.root {
+  @apply flex flex-col min-h-screen;
+  font-family: "Montserrat", monospace;
+}
+
+.mainContent {
+  @apply flex-1 w-5/6 mx-auto mb-8;
+  /* tablet */
+  @apply md:w-2/3;
+  /* laptop */
+  @apply lg:w-3/6;
+}

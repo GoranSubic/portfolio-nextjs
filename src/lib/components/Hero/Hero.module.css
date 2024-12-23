@@ -1,0 +1,76 @@
+.root {
+  @apply mb-8 pt-16 pb-8 px-4 -top-4 text-3xl font-bold leading-normal rounded-lg text-white;
+}
+
+.professionText {
+  @apply p-1 mt-2 text-xl font-semibold text-blue-400;
+}
+
+.greetingMultiLingual::before {
+  content: "Hello";
+  animation: greetingMsgAnimation infinite 20s;
+}
+
+@keyframes greetingMsgAnimation {
+  0% {
+    content: "Zdravo";
+  }
+  20% {
+    content: "Hello";
+  }
+  40% {
+    content: "Namaste";
+  }
+  60% {
+    content: "Hola";
+  }
+  80% {
+    content: "Bonjour";
+  }
+}
+
+.imageWrapper {
+  @apply absolute top-1/4 right-[18%] w-[150px] hidden border-8 border-white rounded-full h-60;
+  /* tablet */
+  @apply md:block md:right-[18%] md:w-44;
+  /* laptop */
+  @apply lg:block lg:right-[26%] lg:w-44;
+
+  @apply xl:block xl:right-[27%] xl:w-60;
+}
+
+.imageWrapper span img {
+  @apply rounded-full;
+}
+
+.resumeBtnWrapper {
+  @apply inline-block;
+}
+
+.resumeBtnWrapper button {
+  @apply px-4 py-2 mt-4 text-xl font-semibold text-blue-400 border-2 border-blue-100 rounded-md;
+}
+
+.resumeBtnWrapper button:hover {
+  @apply text-blue-900 transition-all duration-500 bg-blue-400 border-blue-400;
+}
+
+.socialLinks {
+  @apply mt-4 mb-2 ml-2 inline-block;
+}
+
+.socialLinks svg {
+  @apply w-5 h-5;
+}
+
+.socialLinks button {
+  @apply p-2 rounded-full bg-transparent;
+}
+
+.socialLinks button:hover {
+  @apply transition-all duration-300 bg-blue-900;
+}
+
+.trustblue {
+  background: var(--trust-blue);
+}
