@@ -1,10 +1,4 @@
-import { FaGithub, FaLinkedin, FaTwitter, FaDev } from "react-icons/fa";
-import {
-  SiTailwindcss,
-  SiNextdotjs,
-  SiFramer,
-  SiTypescript,
-} from "react-icons/si";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export const SOCIAL_LINKS = [
   {
