@@ -11,10 +11,9 @@ export const ProfessionalExperience: IProfessionalExperience[] = [
       `
 Worked as an outsourcing team for Webedia, a French media company.
 They manage a portfolio of leading brands in entertainment, lifestyle, and gaming. Short list of brands: 
-750g, Purepeople, Puretrend, Purebreak, Puremedias, Terrafemina, Chartsinfrance, Minha Vida, Millenium.
-
-      Work on developing functionalities and maintaining of project based on PHP and JavaScript frameworks.
-
+750g, Purepeople, Puretrend, Purebreak, Puremedias, Terrafemina, Chartsinfrance, Minha Vida, Millenium. \n
+Website projects were based on PHP and JavaScript frameworks. Part of them were based on their custom CMS and had same Admin panel for managing content. \n
+During period of three years the tehnologies that I worked with are: PHP, Symfony, EasyAdmin, Laravel, Laravel Nova, JavaScript, Vue, MySQL, Postgres, Docker, Git, Jira.
       `,
     designation: "Software Engineer",
   },
