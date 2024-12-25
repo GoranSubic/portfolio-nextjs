@@ -1,5 +1,10 @@
 .root {
-  @apply mb-8 pt-16 pb-8 px-4 -top-4 text-3xl font-bold leading-normal rounded-lg text-white;
+  @apply mb-8 pt-16 pb-8 px-4 -top-4 text-3xl font-bold leading-normal rounded-lg text-white w-5/6  mx-auto;
+  
+  /* tablet */
+  @apply rounded-lg md:w-2/3 md:border-2;
+  /* laptop */
+  @apply lg:w-3/6;
 }
 
 .professionText {

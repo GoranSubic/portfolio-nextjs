@@ -9,7 +9,7 @@ import {
   whileHoverButton,
   scaleAnimation,
 } from "../../../constants/Animations";
-import { MenuItems } from "../../../types/menu";
+import { MenuItems } from "../../types/menu";
 import classes from "./Navbar.module.css";
 
 interface Props {
@@ -195,19 +195,19 @@ export const Navbar: FC<Props> = ({ activeMenu }) => {
             </motion.p>
           </a>
         </Link>
-        <Link legacyBehavior href={"/recomendations"}>
+        <Link legacyBehavior href={"/pages/recommendations"}>
           <a>
             <motion.p
               initial={"hidden"}
               whileInView={"visible"}
               variants={scaleAnElementVariants()}
               className={clsx({
-                [classes.isActive]: activeMenu === MenuItems.RECOMENDATIONS,
+                [classes.isActive]: activeMenu === MenuItems.RECOMMENDATIONS,
               })}
               whileHover={scaleAnimation}
               whileTap={scaleAnimation}
             >
-              Recomendations
+              Recommendations
             </motion.p>
           </a>
         </Link>

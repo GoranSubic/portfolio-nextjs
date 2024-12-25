@@ -1,6 +1,6 @@
 export enum MenuItems {
   JOBS = "jobs",
 
-  RECOMENDATIONS = "recomendations",
+  RECOMMENDATIONS = "recommendations",
   PROJECTS = "projects",
 }
