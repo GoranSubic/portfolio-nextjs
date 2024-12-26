@@ -52,12 +52,16 @@ export const Hero: FC = () => {
           alt={"Goran Subić"}
           layout={"fill"}
           objectFit={"cover"}
+          placeholder="blur"
+          blurDataURL={"/favicon.ico"}
         />
         <Image
           src={"/images/goran-linkedin.png"}
           alt={"Goran Subić LinkedIn"}
           layout={"fill"}
           objectFit={"cover"}
+          placeholder="blur"
+          blurDataURL={"/favicon.ico"}
         />
       </motion.div>
     </div>
