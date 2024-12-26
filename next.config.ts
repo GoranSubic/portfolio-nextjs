@@ -9,6 +9,12 @@ const nextConfig: NextConfig = {
         port: '',
         // pathname: '/dms/image/v2/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'miro.medium.com',
+        port: '',
+        // pathname: '/dms/image/v2/**',
+      },
     ],
   },
 };

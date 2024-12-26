@@ -1,8 +1,8 @@
 // import { RestliClient } from 'linkedin-api-client';
 // import { NextResponse } from 'next/server';
 import { BaseLayout } from "@/layouts/BaseLayout";
-// import Image from 'next/image';
-// import { IRecommendation } from '@/types/recommendations';
+import Image from 'next/image';
+import { IRecommendation } from '@/types/recommendations';
 
 
 export default async function Page() {
@@ -41,12 +41,26 @@ export default async function Page() {
 
   // const recommendations = await response.json();
 
+  const recommendations: IRecommendation = {
+    name: 'recommendationsData.name',
+    email: 'recommendationsData.email',
+    picture: 'https://miro.medium.com/v2/resize:fit:541/1*cY6466o_056cs-XXIN2U0g.png',
+  };
+
   return (
     <BaseLayout>
       <div>
           <h1>Recommendations</h1>
           <ul>
-            <li>Test</li>
+              <li key={recommendations.name}>
+              <p>{recommendations.email}</p>
+              <Image
+                  src={recommendations.picture}
+                  alt={recommendations.name}
+                  width={100}
+                  height={100}
+              />
+              </li>
           </ul>
       </div>
     </BaseLayout>
