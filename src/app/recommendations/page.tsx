@@ -44,6 +44,7 @@ export default async function Page() {
   }
 
   const recommendations = await response.json();
+  console.log('recommendations are: ', recommendations);
 
   return (
     <BaseLayout>
