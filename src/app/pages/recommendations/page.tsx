@@ -1,7 +1,6 @@
 import { RestliClient } from 'linkedin-api-client';
 import { NextResponse } from 'next/server';
 import { BaseLayout } from "@/app/layouts/BaseLayout";
-// import { Recommendations } from "@/app/components/Recommendations/Recommendations";
 import Image from 'next/image';
 import { IRecommendation } from '@/app/types/recommendations';
 
@@ -34,11 +33,9 @@ export default async function Page() {
 
   return (
     <BaseLayout>
-      {/* <Recommendations recommendations={recommendations} /> */}
       <div>
           <h1>Recommendations</h1>
           <ul>
-          {/* {recommendations.map((recommendation) => ( */
               <li key={recommendations.name}>
               <p>{recommendations.email}</p>
               <Image
@@ -48,7 +45,6 @@ export default async function Page() {
                   height={100}
               />
               </li>
-          /* ))} */}
           </ul>
       </div>
     </BaseLayout>
