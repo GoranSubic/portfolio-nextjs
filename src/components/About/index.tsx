@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { FC } from "react";
-import { scaleAnElementVariants } from "../../../constants/Animations";
-import { SKILLS } from "../../../constants/Skills";
+import { scaleAnElementVariants } from "../../constants/Animations";
+import { SKILLS } from "../../constants/Skills";
 import { Experience } from "../Experience/Experience";
 import classes from "./About.module.css";
 

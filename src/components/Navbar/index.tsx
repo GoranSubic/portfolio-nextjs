@@ -8,7 +8,7 @@ import {
   svgVariants,
   whileHoverButton,
   scaleAnimation,
-} from "../../../constants/Animations";
+} from "../../constants/Animations";
 import { MenuItems } from "../../types/menu";
 import classes from "./Navbar.module.css";
 
@@ -195,7 +195,7 @@ export const Navbar: FC<Props> = ({ activeMenu }) => {
             </motion.p>
           </a>
         </Link>
-        <Link legacyBehavior href={"/pages/recommendations"}>
+        <Link legacyBehavior href={"/recommendations"}>
           <a>
             <motion.p
               initial={"hidden"}

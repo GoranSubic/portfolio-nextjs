@@ -1,8 +1,8 @@
 import { RestliClient } from 'linkedin-api-client';
 import { NextResponse } from 'next/server';
-import { BaseLayout } from "@/app/layouts/BaseLayout";
+import { BaseLayout } from "@/layouts/BaseLayout";
 import Image from 'next/image';
-import { IRecommendation } from '@/app/types/recommendations';
+import { IRecommendation } from '@/types/recommendations';
 
 
 export default async function Page() {

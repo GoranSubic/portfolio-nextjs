@@ -1,5 +1,5 @@
 import { FaPhp, FaDrupal, FaSymfony, FaJoomla } from "react-icons/fa";
-import { IProfessionalExperience } from "@/app/types/experience";
+import { IProfessionalExperience } from "@/types/experience";
 
 export const ProfessionalExperience: IProfessionalExperience[] = [
   {

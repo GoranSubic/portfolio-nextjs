@@ -3,9 +3,9 @@
 import Head from "next/head";
 import { FC } from "react";
 import { MenuItems } from "../../types/menu";
-import { Navbar } from "../../../app/components/Navbar";
+import { Navbar } from "../../components/Navbar";
 import classes from "./BaseLayout.module.css";
-import { Hero } from "@/app/components/Hero/Hero";
+import { Hero } from "@/components/Hero/Hero";
 
 interface Props {
   children?: React.ReactNode;

@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
-import { Home } from "@/app/containers/Home/Home";
-import { BaseLayout } from "@/app/layouts/BaseLayout";
+import { Home } from "@/containers/Home/Home";
+import { BaseLayout } from "@/layouts/BaseLayout";
 
 const HomePage: NextPage = () => {
   return (
