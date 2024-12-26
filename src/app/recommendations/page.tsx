@@ -1,6 +1,6 @@
 import { BaseLayout } from "@/layouts/BaseLayout";
-import RecommendationList from "@/app/recommendations/RecommList";
-import classes from '@/app/recommendations/Recomm.module.css';
+import RecommendationList from "@/components/Recommendations/RecommList";
+import classes from '@/components/Recommendations/Recomm.module.css';
 
 export default async function Recommendations() {
   return (
