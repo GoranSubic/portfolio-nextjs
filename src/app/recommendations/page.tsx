@@ -1,8 +1,8 @@
-import { RestliClient } from 'linkedin-api-client';
+// import { RestliClient } from 'linkedin-api-client';
 import { NextResponse } from 'next/server';
 import { BaseLayout } from "@/layouts/BaseLayout";
 import Image from 'next/image';
-import { IRecommendation } from '@/types/recommendations';
+// import { IRecommendation } from '@/types/recommendations';
 
 
 export default async function Page() {
@@ -12,24 +12,38 @@ export default async function Page() {
       return NextResponse.json({ error: 'Access token is required' }, { status: 500 });
   }
 
-  const restliClient = new RestliClient();
+  // const restliClient = new RestliClient();
   // restliClient.setDebugParams({ enabled: true });
 
-  const response = await restliClient.get({
-      resourcePath: '/userinfo',
-      accessToken
+  // const response = await restliClient.get({
+  //     resourcePath: '/userinfo',
+  //     accessToken
+  // });
+
+  // if (response.status !== 200) {
+  //   throw new Error('Failed to fetch LinkedIn recommendations');
+  // }
+
+  // const recommendationsData = response.data;
+  // const recommendations: IRecommendation = {
+  //   name: recommendationsData.name,
+  //   email: recommendationsData.email,
+  //   picture: recommendationsData.picture,
+  // };
+
+  const LINKEDIN_API_URL = 'https://api.linkedin.com/v2/userinfo';
+
+  const response = await fetch(`${LINKEDIN_API_URL}`, {
+    headers: {
+        Authorization: `Bearer ${accessToken}`,
+    },
   });
 
   if (response.status !== 200) {
     throw new Error('Failed to fetch LinkedIn recommendations');
   }
 
-  const recommendationsData = response.data;
-  const recommendations: IRecommendation = {
-    name: recommendationsData.name,
-    email: recommendationsData.email,
-    picture: recommendationsData.picture,
-  };
+  const recommendations = await response.json();
 
   return (
     <BaseLayout>
