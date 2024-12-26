@@ -50,14 +50,8 @@ export default async function Page() {
       <div>
           <h1>Recommendations</h1>
           <ul>
-              <li key={recommendations.name}>
-              <p>{recommendations.email}</p>
-              <Image
-                  src={recommendations.picture}
-                  alt={recommendations.name}
-                  width={100}
-                  height={100}
-              />
+              <li>
+                Test
               </li>
           </ul>
       </div>
