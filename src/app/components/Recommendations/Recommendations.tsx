@@ -1,40 +1,28 @@
 import React, { FC } from "react";
 import Image from 'next/image';
+import { IRecommendation } from "@/app/types/recommendations";
 
-export const Recommendations: FC = async () => {
-  const getLinkedInRecommendations = async () => {
-    
-      const response = await fetch('http://localhost:3000/api/linkedin', {
-        next: {revalidate: 10},
-      });
-  
-      if (!response.ok) {
-        throw new Error('Failed to fetch LinkedIn recommendations');
-      }
-  
-      const data = await response.json();
+interface Props {
+  recommendations: IRecommendation;
+}
 
-      return data;
-  }
-
-  const recommendations = await getLinkedInRecommendations();
-
+export const Recommendations: FC<Props> = ({recommendations}) => {
   return (
     <div>
-      <h1>Recommendations</h1>
-      <ul>
+        <h1>Recommendations</h1>
+        <ul>
         {/* {recommendations.map((recommendation) => ( */
-          <li key={recommendations.name}>
+            <li key={recommendations.name}>
             <p>{recommendations.email}</p>
             <Image
-              src={recommendations.picture}
-              alt={recommendations.name}
-              width={100}
-              height={100}
+                src={recommendations.picture}
+                alt={recommendations.name}
+                width={100}
+                height={100}
             />
-          </li>
+            </li>
         /* ))} */}
-      </ul>
+        </ul>
     </div>
   );
 }
