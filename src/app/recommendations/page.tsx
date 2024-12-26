@@ -1,7 +1,7 @@
 // import { RestliClient } from 'linkedin-api-client';
 import { NextResponse } from 'next/server';
 import { BaseLayout } from "@/layouts/BaseLayout";
-import Image from 'next/image';
+// import Image from 'next/image';
 // import { IRecommendation } from '@/types/recommendations';
 
 
