@@ -13,7 +13,7 @@ export default async function Page() {
   }
 
   const restliClient = new RestliClient();
-  restliClient.setDebugParams({ enabled: true });
+  // restliClient.setDebugParams({ enabled: true });
 
   const response = await restliClient.get({
       resourcePath: '/userinfo',
