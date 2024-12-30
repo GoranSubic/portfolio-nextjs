@@ -6,13 +6,16 @@ import { MenuItems } from "../../types/menu";
 import { Navbar } from "../../components/Navbar";
 import classes from "./BaseLayout.module.css";
 import { Hero } from "@/components/Hero/Hero";
+import { ILinkedInUser } from "@/types/recommendations";
 
 interface Props {
+  linkedInUser: ILinkedInUser;
   children?: React.ReactNode;
   activeMenu?: MenuItems;
 }
 
 export const BaseLayout: FC<Props> = ({
+  linkedInUser,
   children,
   activeMenu,
 }) => {
@@ -93,7 +96,7 @@ export const BaseLayout: FC<Props> = ({
         />
       </Head>
       <Navbar activeMenu={activeMenu} />
-      <Hero />
+      <Hero linkedInUser={linkedInUser} />
       <br />
       <div className={classes.mainContent}>{children}</div>
     </div>

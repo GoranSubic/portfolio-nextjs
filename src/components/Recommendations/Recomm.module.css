@@ -14,16 +14,35 @@
   @apply text-blue-300 transition-all duration-300;
 }
 
-.orText {
-  @apply relative text-center;
+
+.list {
+  @apply m-4 border-l-2 border-blue-600;
 }
 
-.orText::before {
-  @apply block w-1/3 h-0.5 bg-slate-400 left-8 top-1/2 absolute;
-  content: "";
+.itemWrapper {
+  @apply md:flex;
 }
 
-.orText::after {
-  @apply block w-1/3 h-0.5 bg-slate-400 right-8 top-1/2 absolute;
-  content: "";
+.imageWrapper {
+  @apply flex items-center justify-center w-10 h-10 p-1.5 -mt-3 -ml-3 bg-blue-600 rounded-full absolute;
+}
+
+.imageWrapper img {
+  @apply rounded-full;
+}
+
+.contentWrapper {
+  @apply p-4 mb-10 ml-4 bg-gray-100 rounded-lg shadow-lg md:w-full;
+}
+
+.contentHeadingWrapper {
+  @apply mb-2 text-sm font-semibold text-blue-900;
+}
+
+.content {
+  @apply text-black;
+}
+
+.related {
+  @apply text-gray-500 text-xs mt-1;
 }
