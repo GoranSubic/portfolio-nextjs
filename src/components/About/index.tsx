@@ -22,7 +22,7 @@ export const About: FC = () => {
           I have experience in frontend development as well. Projects that I have maintained on the frontend side are made using Vue JS.
           <br />
           I&apos;m a developer who is dedicated to the job and writes the code that I believe you can be proud of :)
-          You could check my portfolio http://goransubic.github.io/ and there you could find CV and information important about education and work experience.
+          You could check my portfolio <a href="https://goransubic.github.io/" target="_blank">https://goransubic.github.io/</a> and there you could find CV and information important about education and work experience.
           <br />
           Besides portfolio, that is made using Next JS + TypeScript + TailwindCSS, I have a couple projects that I&apos;m working on.
           First project that I could present to you, is created using Symfony + Vue.

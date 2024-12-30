@@ -8,8 +8,13 @@ import {
   animateFromLeftVariant,
   animateFromRightVariant,
 } from "../../constants/Animations";
+import { ILinkedInUser } from "@/types/recommendations";
 
-export const Hero: FC = () => {
+interface Props {
+  linkedInUser: ILinkedInUser;
+}
+
+export const Hero: FC<Props> = ({linkedInUser}) => {
   return (
     <div className={classes.root + " " + classes.trustblue}>
       <motion.div
@@ -19,7 +24,7 @@ export const Hero: FC = () => {
       >
         <div>
           <p className={classes.greetingMultiLingual}>,</p>
-          <p>I&apos;m Goran Subić</p>
+          <p>I&apos;m {linkedInUser.name}</p>
         </div>
         <div className={classes.professionText}>
           <p>A passionate Software Engineer</p>
@@ -48,8 +53,8 @@ export const Hero: FC = () => {
         className={classes.imageWrapper}
       >
         <Image
-          src={"/images/GoranSubic.jpeg"}
-          alt={"Goran Subić"}
+          src={linkedInUser.picture}
+          alt={linkedInUser.name}
           layout={"fill"}
           objectFit={"cover"}
           placeholder="blur"
@@ -57,7 +62,7 @@ export const Hero: FC = () => {
         />
         <Image
           src={"/images/goran-linkedin.png"}
-          alt={"Goran Subić LinkedIn"}
+          alt={linkedInUser.name + " LinkedIn"}
           layout={"fill"}
           objectFit={"cover"}
           placeholder="blur"

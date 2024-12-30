@@ -19,23 +19,9 @@
 }
 
 .link {
-  @apply font-semibold underline;
+  @apply font-semibold underline text-blue-900;
 }
 
 .link:hover {
   @apply text-blue-300 transition-all duration-300;
-}
-
-.orText {
-  @apply relative text-center;
-}
-
-.orText::before {
-  @apply block w-1/3 h-0.5 bg-slate-400 left-8 top-1/2 absolute;
-  content: "";
-}
-
-.orText::after {
-  @apply block w-1/3 h-0.5 bg-slate-400 right-8 top-1/2 absolute;
-  content: "";
 }
