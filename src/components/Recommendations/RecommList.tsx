@@ -11,12 +11,14 @@ export default async function RecommendationList() {
                 <li key={idx}>
                     <div className={classes.itemWrapper}>
                         <div className={classes.imageWrapper}>
-                            <Image
-                                src={recommendation.image}
-                                alt={recommendation.person}
-                                layout={"fill"}
-                                objectFit={"cover"}
-                            />
+                            <Link href={recommendation.linkedin}>
+                                <Image
+                                    src={recommendation.image}
+                                    alt={recommendation.person}
+                                    layout={"fill"}
+                                    objectFit={"cover"}
+                                />
+                            </Link>
                         </div>
                         <div className={classes.contentWrapper}>
                             <div className={classes.contentHeadingWrapper}>

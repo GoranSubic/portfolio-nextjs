@@ -35,7 +35,7 @@
 }
 
 .imageWrapper {
-  @apply absolute top-1/4 right-[18%] w-[150px] hidden border-8 border-white rounded-full h-60;
+  @apply absolute top-[20%] right-[18%] w-[150px] hidden border-8 border-white rounded-full h-60;
   /* tablet */
   @apply md:block md:right-[18%] md:w-44;
   /* laptop */
