@@ -16,9 +16,9 @@ export const About: FC = () => {
         <h1 className={classes.heading}># Who Am I?</h1>
         <p>
           My name is Goran Subić, I&apos;m an IT professional with more than 10 years in the IT environment.
-          <br />
+          <br /><br />
           Most of my experience is in the field of backend development using PHP with Symfony, Laravel and Zend frameworks.
-          <br />
+          <br /><br />
           I have experience in frontend development as well. Projects that I have maintained on the frontend side are made using Vue JS.
           <br />
           I&apos;m a developer who is dedicated to the job and writes the code that I believe you can be proud of :)
@@ -64,7 +64,7 @@ export const About: FC = () => {
         variants={scaleAnElementVariants()}
       >
         <h2 className={classes.heading}># My professional experience</h2>
-        <Experience />
+        <Experience isFullJob={false} />
       </motion.div>
     </div>
   );
