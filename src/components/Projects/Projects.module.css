@@ -1,0 +1,7 @@
+.root h1 {
+  @apply text-2xl mb-8 font-semibold text-blue-400;
+}
+
+.heading {
+  @apply mb-4 text-2xl font-semibold text-blue-300;
+}

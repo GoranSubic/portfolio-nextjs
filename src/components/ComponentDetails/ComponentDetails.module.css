@@ -1,0 +1,19 @@
+.root {
+  @apply flex flex-col gap-2 p-4 mb-8 text-justify text-blue-900 bg-blue-100 rounded-md shadow-sm shadow-blue-200;
+}
+
+.innerWrapper {
+  @apply flex items-center justify-between mb-4;
+}
+
+.title {
+  @apply text-xl font-bold;
+}
+
+.description {
+  @apply text-black;
+}
+
+.techStack {
+  @apply mt-4 text-sm font-semibold;
+}
