@@ -1,8 +1,8 @@
-import React, { FC } from 'react';
-import classes from './ComponentDetails.module.css';
-import { FaLink } from 'react-icons/fa';
-import { IComponentDetails } from '../../types/componentDetails';
-import Link from 'next/link';
+import React, { FC } from "react";
+import Link from "next/link";
+import { FaLink } from "react-icons/fa";
+import { IComponentDetails } from "@/types/componentDetails";
+import classes from "./ComponentDetails.module.css";
 
 interface Props {
   componentDetails: IComponentDetails;
