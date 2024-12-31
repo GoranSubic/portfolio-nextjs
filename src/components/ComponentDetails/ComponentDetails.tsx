@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import classes from './ComponentDetails.module.css';
 import { FaLink } from 'react-icons/fa';
-import { IComponentDetails } from '@/types/componentDetails';
+import { IComponentDetails } from "@/types/componentDetails";
 import Link from 'next/link';
 
 interface Props {
