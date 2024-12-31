@@ -1,4 +1,4 @@
-import { IComponentDetails } from "@/types/components";
+import { IComponentDetails } from "@/types/componentDetails";
 import { FaNodeJs, FaReact, FaSymfony } from "react-icons/fa";
 
 export const ProjectsDetails: IComponentDetails[] = [
