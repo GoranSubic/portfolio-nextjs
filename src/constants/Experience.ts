@@ -28,7 +28,7 @@ During period of three years the tehnologies that I worked with are: PHP, Symfon
       "Work on maintaining of project - website which besides presentation has online sale and admin, based on Drupal 8 - <a href='https://regarden.com/' target='_blank'>ReGarden.</a>",
     designation: "Web Developer",
     slug: "fermicoding",
-    url: "",
+    url: "https://regarden.com/",
   },
   {
     icon: FaDrupal,
@@ -46,7 +46,7 @@ During period of three years the tehnologies that I worked with are: PHP, Symfon
       `,
     designation: "Backend Developer",
     slug: "pronovix",
-    url: "",
+    url: "https://pronovix.com/",
   },
   {
     icon: FaJoomla,
@@ -68,7 +68,7 @@ During period of three years the tehnologies that I worked with are: PHP, Symfon
     `,
     designation: "One man show :)",
     slug: "faculty-of-law-novi-sad",
-    url: "",
+    url: "https://pf.uns.ac.rs/rs/",
   },
   {
     icon: FaSymfony,
@@ -86,6 +86,6 @@ During period of three years the tehnologies that I worked with are: PHP, Symfon
       `,
     designation: "Web Developer",
     slug: "cloudtech",
-    url: "",
+    url: "https://www.alexandar-cosmetics.com/",
   },
 ];
