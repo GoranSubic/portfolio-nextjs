@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { FC } from "react";
 import { scaleAnElementVariants } from "../../constants/Animations";
 import { SKILLS } from "../../constants/Skills";
-import { Experience } from "../Experience/Experience";
+import { Experience } from "../Experience/Experiences";
 import classes from "./About.module.css";
 
 export const About: FC = () => {

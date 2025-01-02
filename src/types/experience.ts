@@ -7,4 +7,6 @@ export interface IProfessionalExperience {
   short: string;
   description: string;
   designation: string;
+  slug: string;
+  url: string;
 }

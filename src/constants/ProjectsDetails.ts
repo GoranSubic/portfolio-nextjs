@@ -19,7 +19,7 @@ export const ProjectsDetails: IComponentDetails[] = [
   },
   {
     icon: FaSymfony,
-    title: "Pracice Projects - Design Patterns",
+    title: "Practice Projects - Design Patterns",
     description:
       "Symfony project implemented Domain Driven Design - “Word Game”. This work could be downloaded from: https://github.com/GoranSubic/wordgame (Mar 2022).",
     techStack: "PHP - Symfony - DDD",

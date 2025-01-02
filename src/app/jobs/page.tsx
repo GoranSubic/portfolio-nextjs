@@ -2,7 +2,7 @@ import { BaseLayout } from "@/layouts/BaseLayout";
 import classes from '@/components/Projects/Projects.module.css';
 import { ILinkedInUser } from "@/types/recommendations";
 import { RestliClient } from "linkedin-api-client";
-import { Experience } from "@/components/Experience/Experience";
+import { Experience } from "@/components/Experience/Experiences";
 
 const instanceOfLinkedInUser = (data: ILinkedInUser | undefined | object): data is ILinkedInUser => {
     if (data !== undefined && data !== null) {

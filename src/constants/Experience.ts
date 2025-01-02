@@ -16,6 +16,8 @@ Website projects were based on PHP and JavaScript frameworks. Part of them were 
 During period of three years the tehnologies that I worked with are: PHP, Symfony, EasyAdmin, Laravel, Laravel Nova, JavaScript, Vue, MySQL, Postgres, Docker, Git, Jira.
       `,
     designation: "Software Engineer",
+    slug: "act-digital-serbia",
+    url: "https://actdigital.com/",
   },
   {
     icon: FaDrupal,
@@ -25,6 +27,8 @@ During period of three years the tehnologies that I worked with are: PHP, Symfon
     description:
       "Work on maintaining of project - website which besides presentation has online sale and admin, based on Drupal 8 - <a href='https://regarden.com/' target='_blank'>ReGarden.</a>",
     designation: "Web Developer",
+    slug: "fermicoding",
+    url: "",
   },
   {
     icon: FaDrupal,
@@ -41,6 +45,8 @@ During period of three years the tehnologies that I worked with are: PHP, Symfon
   productize client APIs. It provides a searchable catalog of client API products).
       `,
     designation: "Backend Developer",
+    slug: "pronovix",
+    url: "",
   },
   {
     icon: FaJoomla,
@@ -61,6 +67,8 @@ During period of three years the tehnologies that I worked with are: PHP, Symfon
 - Help desk.
     `,
     designation: "One man show :)",
+    slug: "faculty-of-law-novi-sad",
+    url: "",
   },
   {
     icon: FaSymfony,
@@ -77,5 +85,7 @@ During period of three years the tehnologies that I worked with are: PHP, Symfon
   Apache and Nginx web servers, Vagrant, Git (command line, SmartGit), Redmine.
       `,
     designation: "Web Developer",
+    slug: "cloudtech",
+    url: "",
   },
 ];

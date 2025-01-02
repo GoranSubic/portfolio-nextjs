@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import Link from "next/link";
-import { FaLink } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { IComponentDetails } from "@/types/componentDetails";
 import classes from "./ComponentDetails.module.css";
 
@@ -18,7 +18,7 @@ export const ComponentDetails: FC<Props> = ({ componentDetails }) => {
         {componentDetails.componentURL !=='#' && (
           <Link legacyBehavior href={componentURL}>
             <a target={'_blank'} rel={'noreferrer'}>
-              <FaLink />
+              <FaGithub />
             </a>
           </Link>
         )}
