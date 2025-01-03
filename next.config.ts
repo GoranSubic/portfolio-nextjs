@@ -15,6 +15,12 @@ const nextConfig: NextConfig = {
         port: '',
         // pathname: '/dms/image/v2/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+        port: '',
+        // pathname: '/dms/image/v2/**',
+      },
     ],
   },
 };

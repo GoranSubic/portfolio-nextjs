@@ -1,7 +1,11 @@
 import { JSDOM } from "jsdom";
 
+interface MetaTags {
+  [key: string]: string;
+}
+
 // Function to fetch Open Graph details for a given URL
-export const extractMetaTags = async (url) => {
+export const extractMetaTags = async (url: string) => {
   try {
     // Fetch the content of the URL
     const response = await fetch(url);
@@ -13,7 +17,7 @@ export const extractMetaTags = async (url) => {
 
     // Extract meta tags from the document
     const metaTags = Array.from(document.querySelectorAll("meta")).reduce(
-      (tags, meta) => {
+      (tags: MetaTags, meta) => {
         // Get the name, property, or itemprop attribute of the meta tag
         const name =
           meta.getAttribute("name") ||
