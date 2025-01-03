@@ -22,7 +22,7 @@ export const LinkPreview: FC<Props> = async ({ url }) => {
        <div className="w-[40%]">
          <Image
           src={data.image}
-          alt="Link Preview"
+          alt={data.title}
           width={0}
           height={0}
           sizes="100vw"
