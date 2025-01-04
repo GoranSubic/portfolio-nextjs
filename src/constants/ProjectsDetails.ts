@@ -6,7 +6,10 @@ export const ProjectsDetails: IComponentDetails[] = [
     icon: FaReact,
     title: "Portfolio - NextJS",
     description:
-      "NextJS, TypeScript, TailwindCss - https://github.com/GoranSubic/portfolio-nextjs.",
+      `
+      This is a [Next.js](https://nextjs.org) project bootstrapped with ['create-next-app']
+      NextJS, TypeScript, TailwindCss - https://github.com/GoranSubic/portfolio-nextjs.
+      `,
     techStack: "NextJS - TypeScript - TailwindCss",
     componentURL: "https://goransubic.vercel.app/",
   },

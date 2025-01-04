@@ -19,7 +19,12 @@ export const Experience: FC<Props> = ({experience}) => {
             <div className="mb-4">
               <LinkPreview url={experience.url} />
             </div>
-            <p className={classes.content}>{experience.description}</p>
+            <div className={classes.content}>{
+              experience.description.split('\n').map((paragraph) => {
+                  return <p>{paragraph}</p>;
+                })
+              }
+            </div>
           </div>
         </div>
     </div>

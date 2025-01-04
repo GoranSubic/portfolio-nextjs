@@ -9,7 +9,7 @@ export const ProfessionalExperience: IProfessionalExperience[] = [
     short: "Work on developing functionalities and maintaining of project based on PHP and JavaScript frameworks.",
     description:
       `
-Worked as an outsourcing team for Webedia, a French media company.
+Worked as an outsourcing team for Webedia, a French media company.\n
 They manage a portfolio of leading brands in entertainment, lifestyle, and gaming. Short list of brands: 
 750g, Purepeople, Puretrend, Purebreak, Puremedias, Terrafemina, Chartsinfrance, Minha Vida, Millenium. \n
 Website projects were based on PHP and JavaScript frameworks. Part of them were based on their custom CMS and had same Admin panel for managing content. \n

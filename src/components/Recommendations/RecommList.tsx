@@ -31,7 +31,13 @@ export default async function RecommendationList() {
                             <p>({recommendation.company})</p>
                             <p className={classes.related}>{recommendation.related}</p>
                             </div>
-                            <p className={classes.content}>{recommendation.description}</p>
+                            <div className={classes.content}>
+                                {
+                                    recommendation.description.split('\n').map((paragraph) => {
+                                        return <p>{paragraph}</p>;
+                                    })
+                                }
+                            </div>
                         </div>
                     </div>
                 </li>
