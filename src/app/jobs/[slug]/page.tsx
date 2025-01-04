@@ -4,6 +4,7 @@ import { ILinkedInUser } from "@/types/recommendations";
 import { ProfessionalExperience } from "@/constants/Experience";
 import { IProfessionalExperience } from "@/types/experience";
 import { Experience } from "@/components/Experience/Experience";
+import { notFound } from "next/navigation";
 
 type Props = {
   params: Promise<{
@@ -18,10 +19,12 @@ export default async function JobsPage(props: Props) {
     email: 'gsbuic@gmail.com',
     picture: '/images/GoranSubic.jpeg',
   };
-  const experience: IProfessionalExperience | undefined = ProfessionalExperience.find(experience => experience.slug === params.slug);
+  const experience: IProfessionalExperience | undefined = ProfessionalExperience.find(
+    experience => experience.slug === params.slug
+  );
 
   if (experience === undefined) {
-    return <p className='text-center'>No experience found</p>;
+    return notFound();
   }
 
   return (

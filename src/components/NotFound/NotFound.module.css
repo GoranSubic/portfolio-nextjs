@@ -1,0 +1,18 @@
+.root {
+  @apply flex flex-col items-center justify-center w-screen h-screen gap-4 p-8 text-center;
+  font-family: "Montserrat", monospace;
+}
+
+.goHomeBtnWrapper button {
+  @apply px-4 py-2 mt-4 text-xl font-semibold text-blue-400 border-2 border-blue-100 rounded-md;
+}
+
+.goHomeBtnWrapper button:hover {
+  @apply text-blue-900 transition-all duration-500 bg-blue-400 border-blue-400;
+}
+
+.root h2 {
+  @apply text-3xl font-semibold text-blue-300;
+  /* tablet */
+  @apply sm:text-4xl;
+}
