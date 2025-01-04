@@ -29,8 +29,6 @@ export const LinkPreview: FC<Props> = async ({ url }) => {
     };
   }
 
-  console.log('data is:', dataLocal.image);
-
   return (
     <Link
       href={url}

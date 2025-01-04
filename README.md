@@ -1,8 +1,20 @@
-Portfolio - Next Js, TypeScript, Tailwindcss
-
+# Portfolio - Goran Subić
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+## Tech
+Next Js, TypeScript, Tailwindcss
+
+## Plans
+- Implement Prisma to preserve data to database.
+- Create seeders
+- Admin for crud data to/from database.
+
+## ToDo
+- Create styles/style module for LinkPreview component.
+- Jobs submenu.
+- Jobs breadcrumbs.
+
+### Getting Started
 
 First, run the development server:
 
