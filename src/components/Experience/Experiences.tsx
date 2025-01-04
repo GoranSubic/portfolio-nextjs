@@ -25,8 +25,8 @@ export const Experience: FC<Props> = ({isFullJob}) => {
                     <p className={classes.duration}>{experience.duration}</p>
                   </div>
                   <div className={classes.content}>{isFullJob
-                    ? (experience.description.split('\n').map((paragraph) => {
-                        return <p>{paragraph}</p>;
+                    ? (experience.description.split('\n').map((paragraph, idx) => {
+                        return <p key={idx}>{paragraph}</p>;
                       }))
                     : experience.short}
                   </div>

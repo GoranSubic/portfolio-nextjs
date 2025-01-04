@@ -33,8 +33,8 @@ export default async function RecommendationList() {
                             </div>
                             <div className={classes.content}>
                                 {
-                                    recommendation.description.split('\n').map((paragraph) => {
-                                        return <p>{paragraph}</p>;
+                                    recommendation.description.split('\n').map((paragraph, idx) => {
+                                        return <p key={idx}>{paragraph}</p>;
                                     })
                                 }
                             </div>
