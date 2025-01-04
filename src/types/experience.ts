@@ -9,4 +9,5 @@ export interface IProfessionalExperience {
   designation: string;
   slug: string;
   url: string;
+  image: string;
 }

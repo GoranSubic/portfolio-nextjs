@@ -27,6 +27,12 @@ const nextConfig: NextConfig = {
         port: '',
         // pathname: '/dms/image/v2/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'www.fermicoding.com',
+        port: '',
+        // pathname: '/dms/image/v2/**',
+      },
     ],
   },
 };
