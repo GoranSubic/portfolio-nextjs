@@ -2,11 +2,12 @@
 
 import Head from "next/head";
 import { FC } from "react";
-import { MenuItems } from "../../types/menu";
-import { Navbar } from "../../components/Navbar";
+import { MenuItems } from "@/types/menu";
+import { Navbar } from "@/components/Navbar";
 import classes from "./BaseLayout.module.css";
 import { Hero } from "@/components/Hero/Hero";
 import { ILinkedInUser } from "@/types/recommendations";
+import { Footer } from "@/components/Footer";
 
 interface Props {
   linkedInUser: ILinkedInUser;
@@ -99,6 +100,7 @@ export const BaseLayout: FC<Props> = ({
       <Hero linkedInUser={linkedInUser} />
       <br />
       <div className={classes.mainContent}>{children}</div>
+      <Footer />
     </div>
   );
 };

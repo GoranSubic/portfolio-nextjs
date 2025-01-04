@@ -10,6 +10,7 @@ Next Js, TypeScript, Tailwindcss
 - Admin for crud data to/from database.
 
 ## ToDo
+- Include LinkedIn data from one file, remove duplicate code.
 - Create styles/style module for LinkPreview component.
 - Jobs submenu.
 - Jobs breadcrumbs.
