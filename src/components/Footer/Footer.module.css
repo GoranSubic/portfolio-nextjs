@@ -1,5 +1,5 @@
 .root {
-  @apply flex flex-col items-center justify-center gap-4 pb-4;
+  @apply flex flex-col items-center justify-center gap-4 pb-4 w-1/2 mx-auto;
 }
 
 .builtByText {
@@ -11,7 +11,7 @@
 }
 
 .bottomFooter {
-  @apply flex flex-col-reverse gap-2;
+  @apply flex flex-col gap-2;
 
   @apply md:flex-row;
 }

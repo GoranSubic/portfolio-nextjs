@@ -5,13 +5,8 @@ import { LIBRARIES_USED_LINKS } from "@/constants/SocialLinks";
 export const Footer: FC = () => {
   return (
     <div className={classes.root}>
-      <div className="flex flex-row">
+      <div>
         <div className={classes.bottomFooter}>
-          <div className={classes.myText}>
-            <p>Goran Subić</p>
-            <p><a href="Tel:+381658583432">Phone: +381 65/85-83-432</a></p>
-            <p><a href="Mailto:gsubic@gmail.com">Email: gsubic@gmail.com</a></p>
-          </div>
           <p className={classes.builtByText}>
             <span>Built using:</span>
             <span>
@@ -29,6 +24,11 @@ export const Footer: FC = () => {
               ))}
             </span>
           </p>
+          <div className={classes.myText}>
+            <p>Goran Subić</p>
+            <p><a href="Tel:+381658583432">Phone: +381 65/85-83-432</a></p>
+            <p><a href="Mailto:gsubic@gmail.com">Email: gsubic@gmail.com</a></p>
+          </div>
         </div>
     </div>
     <div className={classes.rightsText}>
