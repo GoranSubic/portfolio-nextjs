@@ -15,23 +15,31 @@ export const About: FC = () => {
       >
         <h1 className={classes.heading}># Who Am I?</h1>
         <p>
-          My name is Goran Subić, I&apos;m an IT professional with more than 10 years in the IT environment.
+          My name is Goran Subić, I&apos;m an IT professional with more than 10 years of experience in the industry.
           <br /><br />
-          Most of my experience is in the field of backend development using PHP with Symfony, Laravel and Zend frameworks.
+          Most of my experience  lies in backend development, where I&apos;ve worked extensively with PHP and frameworks such as Symfony, Laravel, and Zend.
+          <br />
+          Lastly, I gained experience working on project using NodeJS, Express, TypeScript, Prisma.
           <br /><br />
-          I have experience in frontend development as well. Projects that I have maintained on the frontend side are made using Vue JS.
+          I also have experience in frontend development as well. Projects that I have maintained on the frontend side are made moslty using Vue JS.
           <br />
-          I&apos;m a developer who is dedicated to the job and writes the code that I believe you can be proud of :)
-          You could check my portfolio <a href="https://goransubic.github.io/" target="_blank">https://goransubic.github.io/</a> and there you could find CV and information important about education and work experience.
+          Also, I gained experience using NextJS, TypeScript, TailwindCSS. This portfolio was made using that stack.
+          <br /><br />
+          I&apos;m a developer who is dedicated to the job and writes code that I believe you can be proud of :)
+          You can check my portfolio at <a href="https://goransubic.github.io/" target="_blank">https://goransubic.github.io/</a> where you will find my CV and important information about my education and work experience.
+          <br /><br />
+          In addition to my portfolio, which was built using Next JS + TypeScript + TailwindCSS, I am currently working on a few projects.
           <br />
-          Besides portfolio, that is made using Next JS + TypeScript + TailwindCSS, I have a couple projects that I&apos;m working on.
-          First project that I could present to you, is created using Symfony + Vue.
-          Next, I have made a project using Node JS + Express + Prisma. That is a backend project, I have to complete the frontend part using Next Js.
-          Also, there are a couple of projects that can be found on my GitHub profile that were made for practice and learning purposes.
+          One of these (which I could present to you) is a project created with Symfony and Vue.js: <a href="https://galternativa8.rs/" target="_blank">https://alternativa8.rs/</a>.
           <br />
-          I believe that I can be a useful part of your team because of my working experience with such a team,
-          technologies that I&apos;m experienced in and great willingness to learn and improve my knowledge and skills.
-          During my career, I met great people, we did a lot of good work, but sometimes there were different types of pressure that I had to deal with.
+          Another project, I&apos;ve developed uses NodeJS + Express + Prisma for the backend, with plans to complete the frontend using Next.js.
+          <br />
+          Also, there are a couple of projects on my GitHub profile, which I&apos;ve created for practice and learning purposes.
+          <br /><br />
+          I believe I can be a valuable addition to your team thanks to my experience as a team player,
+          my expertise in various technologies, and my strong desire to continue learning and improving my skills.
+          <br />
+          Throughout my career, I&apos;ve had the privilege of working with great people, delivering quality work, and effectively handling various pressures along the way.
         </p>
       </motion.div>
       <br />
