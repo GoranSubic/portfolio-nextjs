@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { FC } from "react";
+import { FC, useState } from "react";
 import {
   scaleAnElementVariants,
   svgLogoPathVariants,
@@ -11,12 +11,20 @@ import {
 } from "../../constants/Animations";
 import { MenuItems } from "../../types/menu";
 import classes from "./Navbar.module.css";
+import { ProfessionalExperience } from "@/constants/Experience";
 
 interface Props {
   activeMenu?: MenuItems;
 }
 
 export const Navbar: FC<Props> = ({ activeMenu }) => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const jobsMenuItems = ProfessionalExperience?.length ? ProfessionalExperience : [];
+  const toggle = () => {
+    setIsOpen(old => !old);
+  }
+  const transClass = isOpen ? "flex" : "hidden";
+
   return (
     <motion.div
       initial={"hidden"}
@@ -165,7 +173,7 @@ export const Navbar: FC<Props> = ({ activeMenu }) => {
       <div className={classes.navbarLinks}>
         <Link legacyBehavior href={"/projects"}>
           <a>
-            <motion.p
+            <motion.div
               initial={"hidden"}
               whileInView={"visible"}
               variants={scaleAnElementVariants()}
@@ -176,12 +184,11 @@ export const Navbar: FC<Props> = ({ activeMenu }) => {
               whileTap={scaleAnimation}
             >
               Projects
-            </motion.p>
+            </motion.div>
           </a>
         </Link>
-        <Link legacyBehavior href={"/jobs"}>
-          <a>
-            <motion.p
+        <span>
+            <motion.div
               initial={"hidden"}
               whileInView={"visible"}
               variants={scaleAnElementVariants()}
@@ -190,14 +197,30 @@ export const Navbar: FC<Props> = ({ activeMenu }) => {
               })}
               whileHover={scaleAnimation}
               whileTap={scaleAnimation}
+              onClick={toggle}
             >
-              Jobs
-            </motion.p>
-          </a>
-        </Link>
+              <div>
+                Jobs
+                <div className={`absolute m-1 top-8 z-30 w-auto h-auto flex flex-col py-4 bg-slate-900 bg-opacity-80 rounded-md ${transClass}`}>
+                  {
+                    jobsMenuItems.map(item =>
+                      <Link
+                        key={item.slug}
+                        className="text-white hover:text-blue-400"
+                        href={"/jobs/" + item?.slug || ''}
+                        onClick={toggle}
+                      >
+                        {item.company}
+                      </Link>
+                    )
+                  }
+                </div>
+              </div>
+            </motion.div>
+        </span>
         <Link legacyBehavior href={"/recommendations"}>
           <a>
-            <motion.p
+            <motion.div
               initial={"hidden"}
               whileInView={"visible"}
               variants={scaleAnElementVariants()}
@@ -208,7 +231,7 @@ export const Navbar: FC<Props> = ({ activeMenu }) => {
               whileTap={scaleAnimation}
             >
               Recommendations
-            </motion.p>
+            </motion.div>
           </a>
         </Link>
       </div>

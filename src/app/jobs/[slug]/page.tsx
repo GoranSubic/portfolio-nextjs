@@ -5,6 +5,7 @@ import { ProfessionalExperience } from "@/constants/Experience";
 import { IProfessionalExperience } from "@/types/experience";
 import { Experience } from "@/components/Experience/Experience";
 import { notFound } from "next/navigation";
+import Link from "next/link";
 
 type Props = {
   params: Promise<{
@@ -31,7 +32,10 @@ export default async function JobsPage(props: Props) {
     <>
       <BaseLayout linkedInUser={linkedInUser} >
         <div>
-            <h1 className={classes.heading}>{experience.company}</h1>
+            <h1 className={classes.heading}>
+              <Link href={"/jobs"}>/Jobs/</Link>
+              {experience.company}
+            </h1>
         </div>
         <Experience experience={experience} />
       </BaseLayout>

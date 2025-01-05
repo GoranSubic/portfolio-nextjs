@@ -52,7 +52,7 @@ export default async function Jobs() {
   return (
     <BaseLayout linkedInUser={linkedInUser}>
       <div>
-          <h1 className={classes.heading}>Projects</h1>
+          <h1 className={classes.heading}>Experiences</h1>
           <Experience isFullJob={true} />
       </div>
     </BaseLayout>

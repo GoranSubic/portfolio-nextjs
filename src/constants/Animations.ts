@@ -45,7 +45,7 @@ export const svgVariants = {
 };
 
 export const scaleAnimation = {
-  scale: 1.1,
+  scale: 1,
   transition: { type: "spring" },
 };
 
