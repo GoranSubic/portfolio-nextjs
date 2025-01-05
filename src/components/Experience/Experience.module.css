@@ -29,3 +29,11 @@
 .duration {
   @apply text-gray-500 text-xs mt-1;
 }
+
+.paragraphBlock {
+  @apply my-4 flex flex-col;
+}
+
+.paragraphBlock span {
+  @apply my-0;
+}

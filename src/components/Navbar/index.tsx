@@ -201,7 +201,7 @@ export const Navbar: FC<Props> = ({ activeMenu }) => {
             >
               <div>
                 Jobs
-                <div className={`absolute m-1 top-8 z-30 w-auto h-auto flex flex-col py-4 bg-slate-900 bg-opacity-80 rounded-md ${transClass}`}>
+                <div className={`absolute m-1 top-8 z-30 w-auto h-auto flex flex-col p-4 bg-slate-900 bg-opacity-80 rounded-md ${transClass}`}>
                   {
                     jobsMenuItems.map(item =>
                       <Link

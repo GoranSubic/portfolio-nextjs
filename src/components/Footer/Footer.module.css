@@ -1,5 +1,9 @@
 .root {
-  @apply flex flex-col items-center justify-center gap-4 pb-4 w-1/2 mx-auto;
+  @apply flex flex-col items-center justify-center gap-4 pb-4 w-5/6 mx-auto;
+  /* tablet */
+  @apply md:w-2/3;
+  /* laptop */
+  @apply lg:w-3/6;
 }
 
 .builtByText {

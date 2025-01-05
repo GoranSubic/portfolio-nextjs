@@ -46,7 +46,7 @@ export const LinkPreview: FC<Props> = async ({ url }) => {
         />
       </div>
       <div className="w-[60%]">
-        <h2 className="body-lg leading-[2rem] mb-2 ">
+        <h2 className="text-xl body-lg mb-2 ">
           {data && data.title ? data.title : dataLocal.title}
         </h2>
         <p className="text-base  line-clamp-3 mb-2 ">{data && data.description ? data.description : dataLocal.description}</p>
