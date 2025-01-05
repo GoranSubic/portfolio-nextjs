@@ -3,21 +3,25 @@
 }
 
 .builtByText {
-  @apply flex flex-row items-center justify-center gap-2;
+  @apply flex flex-col items-center justify-center gap-2 mx-4;
+}
+
+.builtByText span {
+  @apply flex flex-row gap-2;
 }
 
 .bottomFooter {
-  @apply flex flex-col-reverse gap-2 m-4 text-sm font-semibold text-gray-500;
+  @apply flex flex-col-reverse gap-2;
 
   @apply md:flex-row;
 }
 
 .myText {
-  @apply flex flex-col items-center justify-center;
+  @apply flex flex-col items-center justify-center m-4;
+
+  @apply md:mx-4
 }
 
 .rightsText {
-  @apply flex flex-row items-center justify-center gap-2;
-
-  @apply md:m-4;
+  @apply flex flex-row items-center justify-center gap-2 text-sm font-semibold text-gray-500;
 }
