@@ -26,11 +26,11 @@ export const About: FC = () => {
           Also, I gained experience using NextJS, TypeScript, TailwindCSS. This portfolio was made using that stack.
           <br /><br />
           I&apos;m a developer who is dedicated to the job and writes code that I believe you can be proud of :)
-          You can check my portfolio at <a href="https://goransubic.github.io/" target="_blank">https://goransubic.github.io/</a> where you will find my CV and important information about my education and work experience.
+          You can check my portfolio here at <a href="https://goransubic.vercel.app/" target="_blank">https://goransubic.vercel.app/</a> and on GitHub <a href="https://github.com/GoranSubic/portfolio-nextjs" target="_blank">https://github.com/GoranSubic/portfolio-nextjs</a> where you will find my CV and important information about my education and work experience.
           <br /><br />
           In addition to my portfolio, which was built using Next JS + TypeScript + TailwindCSS, I am currently working on a few projects.
           <br />
-          One of these (which I could present to you) is a project created with Symfony and Vue.js: <a href="https://galternativa8.rs/" target="_blank">https://alternativa8.rs/</a>.
+          One of these (which I could present to you) is a project created with Symfony and Vue.js: <a href="https://alternativa8.rs/" target="_blank">https://alternativa8.rs/</a>.
           <br />
           Another project, I&apos;ve developed uses NodeJS + Express + Prisma for the backend, with plans to complete the frontend using Next.js.
           <br />

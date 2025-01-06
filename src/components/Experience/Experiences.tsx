@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import { ProfessionalExperience } from "../../constants/Experience";
 import classes from "./Experience.module.css";
 import Link from "next/link";
+import parse from 'html-react-parser';
 
 interface Props {
   isFullJob: boolean;
@@ -26,7 +27,7 @@ export const Experience: FC<Props> = ({isFullJob}) => {
                   </div>
                   <div className={classes.content}>{isFullJob
                     ? (experience.description.split('\n').map((paragraph, idx) => {
-                        return <p key={idx}>{paragraph}</p>;
+                        return <p key={idx}>{parse(paragraph)}</p>;
                       }))
                     : experience.short}
                   </div>
