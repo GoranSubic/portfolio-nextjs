@@ -16,7 +16,7 @@
 }
 
 .navbarLinksElement {
-  @apply w-12 overflow-hidden;
+  @apply w-12 overflow-hidden truncate whitespace-normal;
 
   @apply sm:w-max;
 }
