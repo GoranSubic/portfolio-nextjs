@@ -15,6 +15,12 @@
   @apply flex gap-4 justify-evenly;
 }
 
+.navbarLinksElement {
+  @apply w-12 overflow-hidden;
+
+  @apply sm:w-max;
+}
+
 .navbarLinks a:hover, .navbarLinks span:hover {
   @apply text-blue-400 transition-all duration-200 cursor-pointer;
 }

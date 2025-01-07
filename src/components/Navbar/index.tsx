@@ -177,9 +177,12 @@ export const Navbar: FC<Props> = ({ activeMenu }) => {
               initial={"hidden"}
               whileInView={"visible"}
               variants={scaleAnElementVariants()}
-              className={clsx({
-                [classes.isActive]: activeMenu === MenuItems.PROJECTS,
-              })}
+              className={
+                clsx({
+                  [classes.isActive]: activeMenu === MenuItems.PROJECTS,
+                }) +
+                classes.navbarLinksElement
+              }
               whileHover={scaleAnimation}
               whileTap={scaleAnimation}
             >
@@ -192,9 +195,12 @@ export const Navbar: FC<Props> = ({ activeMenu }) => {
               initial={"hidden"}
               whileInView={"visible"}
               variants={scaleAnElementVariants()}
-              className={clsx({
-                [classes.isActive]: activeMenu === MenuItems.JOBS,
-              })}
+              className={
+                clsx({
+                  [classes.isActive]: activeMenu === MenuItems.JOBS,
+                }) +
+                classes.navbarLinksElement
+              }
               whileHover={scaleAnimation}
               whileTap={scaleAnimation}
               onClick={toggle}
@@ -224,9 +230,12 @@ export const Navbar: FC<Props> = ({ activeMenu }) => {
               initial={"hidden"}
               whileInView={"visible"}
               variants={scaleAnElementVariants()}
-              className={clsx({
-                [classes.isActive]: activeMenu === MenuItems.RECOMMENDATIONS,
-              })}
+              className={
+                clsx({
+                  [classes.isActive]: activeMenu === MenuItems.RECOMMENDATIONS,
+                }) +
+                classes.navbarLinksElement
+              }
               whileHover={scaleAnimation}
               whileTap={scaleAnimation}
             >

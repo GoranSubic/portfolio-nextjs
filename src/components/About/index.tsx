@@ -21,7 +21,7 @@ export const About: FC = () => {
           <br />
           Lastly, I gained experience working on project using NodeJS, Express, TypeScript, Prisma.
           <br /><br />
-          I also have experience in frontend development as well. Projects that I have maintained on the frontend side are made moslty using Vue JS.
+          I have experience in frontend development as well. Projects that I have maintained on the frontend side are made moslty using Vue JS.
           <br />
           Also, I gained experience using NextJS, TypeScript, TailwindCSS. This portfolio was made using that stack.
           <br /><br />
