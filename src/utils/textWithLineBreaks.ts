@@ -1,13 +1,11 @@
 import parse from 'html-react-parser';
 
 interface Props {
-    key: string;
     text: string;
     classes: string;
 }
 
 export default function TextWithLineBreaks(props: Props) {
-  const idx=props.key;
   const textToParse = props.text;
   const classes = props.classes;
 
