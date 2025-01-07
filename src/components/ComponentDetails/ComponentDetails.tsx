@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { IComponentDetails } from "@/types/componentDetails";
 import classes from "./ComponentDetails.module.css";
+import TextWithLineBreaks from "@/utils/textWithLineBreaks";
 
 interface Props {
   componentDetails: IComponentDetails;
@@ -23,7 +24,8 @@ export const ComponentDetails: FC<Props> = ({ componentDetails }) => {
           </Link>
         )}
       </div>
-      <p className={classes.description}>{description}</p>
+      {/* <p className={classes.description}>{parse(description)}</p> */}
+      <TextWithLineBreaks key={title} text={description} classes={classes.paragraphBlock}></TextWithLineBreaks>
       <p className={classes.techStack}>{techStack}</p>
     </div>
   );
