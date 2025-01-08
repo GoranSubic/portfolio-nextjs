@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import classes from "./Experience.module.css";
 import { IProfessionalExperience } from "@/types/experience";
 import { LinkPreview } from "./LinkPreview";
-import parse from 'html-react-parser';
+import TextWithLineBreaks from "@/utils/textWithLineBreaks";
 
 interface Props {
   experience: IProfessionalExperience;
@@ -21,14 +21,8 @@ export const Experience: FC<Props> = ({experience}) => {
               <LinkPreview url={experience.url} />
             </div>
             <div className={classes.content}>{
-              experience.description.split('<paragraph>').map((paragraph, idx) => {
-                const paragraphArr = paragraph.split('<nextline>').map((newline, idx) => {
-                  return <span key={idx}>{parse(newline)}</span>;
-                });
-
-                return <p className={classes.paragraphBlock} key={idx}>{paragraphArr ? paragraphArr : parse(paragraph)}</p>;
-              })
-              }
+              <TextWithLineBreaks text={experience.description} classes={classes.paragraphBlock} />
+            }
             </div>
           </div>
         </div>

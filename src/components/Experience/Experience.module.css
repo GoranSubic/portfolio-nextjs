@@ -2,6 +2,10 @@
   @apply m-4 border-l-2 border-blue-600;
 }
 
+.list a {
+  @apply text-blue-900;
+}
+
 .itemWrapper {
   @apply md:flex;
 }

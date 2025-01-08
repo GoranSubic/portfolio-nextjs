@@ -27,9 +27,9 @@ The tehnologies that I worked with are: PHP, Symfony, EasyAdmin, Laravel, Larave
     duration: "Apr 2021 - Feb 2022",
     short: "Work on maintaining of project based on Drupal 8.",
     description:
-      `Project maintenance, upgrading existing and adding new functionalities
-- Drupal 8 multi-site including a web presentation with online sales and an admin section (as a subdomain - intranet)
-<a href='https://regarden.com/' target='_blank'>ReGarden.</a>
+      `
+Project maintenance, upgrading existing and adding new functionalities
+- Drupal 8 multi-site including a web presentation with online sales and an admin section (as a subdomain - intranet) <a href='https://regarden.com/' target='_blank'>ReGarden.</a>
       `,
     designation: "Web Developer",
     slug: "fermicoding",
