@@ -16,16 +16,16 @@ export const extractMetaTags = async (url: string) => {
     const document = dom.window.document;
 
     // Extract meta tags from the document
-    const metaTags = Array.from(document.querySelectorAll("meta")).reduce(
-      (tags: MetaTags, meta) => {
+    const metaTags = Array.from(document.querySelectorAll("meta")).reduce<MetaTags>(
+      (tags, meta) => {
+        const metaElement = meta as Element;
         // Get the name, property, or itemprop attribute of the meta tag
-        const name =
-          meta.getAttribute("name") ||
-          meta.getAttribute("property") ||
-          meta.getAttribute("itemprop");
+        const name = metaElement.getAttribute("name") ||
+          metaElement.getAttribute("property") ||
+          metaElement.getAttribute("itemprop");
+          metaElement.getAttribute("itemprop");
 
-        // Get the content attribute of the meta tag
-        const content = meta.getAttribute("content");
+        const content = metaElement.getAttribute("content");
 
         // If both name and content exist, add them to the tags object
         if (name && content) {
