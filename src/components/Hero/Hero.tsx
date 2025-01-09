@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import classes from "./Hero.module.css";
 import Image from "next/legacy/image";
 import Link from "next/link";
+import { sendGTMEvent } from '@next/third-parties/google'
 import { SOCIAL_LINKS } from "../../constants/SocialLinks";
 import { motion } from "framer-motion";
 import {
@@ -38,7 +39,11 @@ export const Hero: FC<Props> = ({linkedInUser}) => {
         </div>
         <div className={classes.socialLinks}>
           {SOCIAL_LINKS.map((socialLink) => (
-            <button key={socialLink.link} aria-label={socialLink.name}>
+            <button
+              key={socialLink.link}
+              aria-label={socialLink.name}
+              onClick={() => sendGTMEvent({ event: 'buttonClicked', value: `SOCIAL_LINKS_${socialLink.name}` })}
+            >
               <a href={socialLink.link} target={"_blank"} rel={"noreferrer"}>
                 {<socialLink.component aria-label={socialLink.name} />}
               </a>
