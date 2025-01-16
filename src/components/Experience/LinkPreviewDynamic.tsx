@@ -2,12 +2,6 @@ import Link from "next/link";
 import Image from "next/legacy/image";
 import { FC } from "react";
 
-interface DataProps {
-  title: string;
-  description: string;
-  image: string;
-}
-
 interface Props {
   data: {
     title: string;
