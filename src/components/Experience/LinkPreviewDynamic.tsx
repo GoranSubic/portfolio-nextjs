@@ -16,9 +16,9 @@ const LinkPreviewDynamic: FC<Props> = ({data, url}) => {
     <Link
       href={url}
       target="_blank"
-      className="text-black w-[100%] h-[100%] cursor-pointer flex items-center bg-[#f3f3f3] gap-3 text-left border-white border-[2px]"
+      className="text-black cursor-pointer flex items-center bg-[#f3f3f3] gap-3 text-left border-white border-[2px]"
     >
-      <div className="w-[40%]">
+      <div className="w-[40%]" >
         {data && data.image && <Image
         src={data && data.image}
         alt={data && data.title}
