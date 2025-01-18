@@ -1,9 +1,9 @@
-import { FaPhp, FaDrupal, FaJoomla } from "react-icons/fa";
+import { FaPhp, FaDrupal, FaNodeJs } from "react-icons/fa";
 import { IRecommendation } from "@/types/recommendations";
 
 export const Recommendations: IRecommendation[] = [
   {
-    icon: FaJoomla,
+    icon: FaPhp,
     image: "/images/recommendations/Igor.jpeg",
     type: "Received",
     linkedin: "https://www.linkedin.com/in/igor-uzelac",
@@ -21,7 +21,7 @@ Therefore, I am confident that Goran will be a tremendous asset to any team !
     `,
   },
   {
-    icon: FaJoomla,
+    icon: FaPhp,
     image: "/images/recommendations/Olivier.jpeg",
     type: "Received",
     linkedin: "https://www.linkedin.com/in/olivierdepiesse",
@@ -37,7 +37,7 @@ His technical expertise and attention to detail have been critical to our succes
     `,
   },
   {
-    icon: FaPhp,
+    icon: FaNodeJs,
     image: "/images/recommendations/Damir.jpeg",
     type: "Received",
     linkedin: "https://www.linkedin.com/in/dperkosan",

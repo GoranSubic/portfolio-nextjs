@@ -29,9 +29,11 @@ export const Experience: FC<Props> = async ({experience}) => {
             <div className="mb-4">
               <LinkPreview data={dataLink} url={experience.url} />
             </div>
-            <div className={classes.content}>{
-              <TextWithLineBreaks text={experience.description} classes={classes.paragraphBlock} />
-            }
+            <div className={classes.content}>
+              <h2 className={classes.heading2}>Job Description</h2>
+              {
+                <TextWithLineBreaks text={experience.description} classes={classes.paragraphBlock} />
+              }
             </div>
           </div>
         </div>

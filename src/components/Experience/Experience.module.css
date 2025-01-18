@@ -27,7 +27,7 @@
 }
 
 .content {
-  @apply text-black;
+  @apply text-black pt-4;
 }
 
 .duration {
@@ -40,4 +40,8 @@
 
 .paragraphBlock span {
   @apply my-0;
+}
+
+.heading2 {
+  @apply my-4 text-blue-400;
 }
