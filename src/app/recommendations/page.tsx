@@ -3,6 +3,8 @@ import RecommendationList from "@/components/Recommendations/RecommList";
 import classes from '@/components/Recommendations/Recomm.module.css';
 import { ILinkedInUser } from "@/types/recommendations";
 import { RestliClient } from "linkedin-api-client";
+import Image from "next/image";
+import Link from "next/link";
 
 const instanceOfLinkedInUser = (data: ILinkedInUser | undefined | object): data is ILinkedInUser => {
     if (data !== undefined && data !== null) {
@@ -59,8 +61,24 @@ export default async function Recommendations() {
   return (
     <BaseLayout linkedInUser={linkedInUser}>
       <div>
+        <div className="flex flex-row justify-between mt-4">
           <h1 className={classes.heading}>Recommendations</h1>
-          <RecommendationList />
+          <Link
+            href="https://www.linkedin.com/in/goran-subic/details/recommendations/"
+            target="_blank"
+            className="cursor-pointer self-center relative"
+          >
+            <Image
+              src="/images/recommendations/LI-Logo.png"
+              alt="LinkedIn Logo"
+              width={0}
+              height={0}
+              sizes="10vw"
+              style={{ width: '100%', height: 'auto' }}
+            />
+          </Link>
+        </div>
+        <RecommendationList />
       </div>
     </BaseLayout>
   );
