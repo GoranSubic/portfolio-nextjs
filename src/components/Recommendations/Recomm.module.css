@@ -3,7 +3,7 @@
 }
 
 .heading {
-  @apply mb-4 text-2xl font-semibold text-blue-300 flex flex-row mt-4 gap-2;
+  @apply mb-4 text-2xl font-semibold text-blue-300 flex flex-row flex-wrap mt-4 gap-2;
 }
 
 .headingTitle {
@@ -11,7 +11,9 @@
 }
 
 .headingTitleLn {
-  @apply self-center cursor-pointer;
+  @apply self-center cursor-pointer w-4/12;
+
+  @apply md:self-center md:cursor-pointer md:w-2/12;
 }
 
 .link {
