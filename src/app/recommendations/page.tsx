@@ -61,12 +61,13 @@ export default async function Recommendations() {
   return (
     <BaseLayout linkedInUser={linkedInUser}>
       <div>
-        <div className="flex flex-row justify-between mt-4">
-          <h1 className={classes.heading}>Recommendations</h1>
+        <div className={classes.heading}>
+          <h1 className={classes.headingTitle}>Recommendations</h1>
+          <span className={classes.headingTitle}>from:</span>
           <Link
             href="https://www.linkedin.com/in/goran-subic/details/recommendations/"
             target="_blank"
-            className="cursor-pointer self-center relative"
+            className={classes.headingTitleLn}
           >
             <Image
               src="/images/recommendations/LI-Logo.png"
