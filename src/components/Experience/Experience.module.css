@@ -45,3 +45,32 @@
 .heading2 {
   @apply my-4 text-blue-400;
 }
+
+.linkPreview {
+  @apply text-black cursor-pointer flex flex-col items-center bg-[#f3f3f3] gap-3 text-left border-white border-[2px];
+  @apply md:flex md:flex-row;
+}
+
+.linkPreviewImage {
+  @apply w-[100%];
+  @apply md:w-[40%];
+}
+
+.linkPreviewInfo {
+  @apply flex flex-col;
+  @apply md:w-[50%];
+}
+
+.linkPreviewInfoHeading {
+  @apply self-center;
+  @apply text-xl mb-2;
+}
+
+.linkPreviewInfoDesc {
+  @apply text-base line-clamp-3 mb-2;
+}
+
+.linkPreviewInfoUrl {
+  @apply self-center;
+  @apply mt-3 opacity-50 text-xs;
+}
