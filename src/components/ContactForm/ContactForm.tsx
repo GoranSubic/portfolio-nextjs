@@ -171,7 +171,7 @@ export const ContactForm: FC = () => {
                 </p>
               )}
               {showFailureMessage && (
-                <p className={classes.failureMessage}>>
+                <p className={classes.failureMessage}>
                   Oops! Something went wrong, please try again.
                 </p>
               )}
