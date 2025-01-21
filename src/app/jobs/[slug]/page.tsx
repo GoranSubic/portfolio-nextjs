@@ -20,13 +20,13 @@ export default async function JobsPage(props: Props) {
     email: 'gsbuic@gmail.com',
     picture: '/images/GoranSubic.jpeg',
   };
-  const experience: IProfessionalExperience | undefined = ProfessionalExperience.find(
-    experience => experience.slug === params.slug
-  );
 
-  if (experience === undefined) {
+  const indexOfExperience: number = ProfessionalExperience.map(experienceMap => experienceMap.slug).indexOf(params.slug);
+  if (indexOfExperience === -1) {
     return notFound();
   }
+
+  const experience: IProfessionalExperience | undefined = ProfessionalExperience[indexOfExperience];
 
   return (
     <>

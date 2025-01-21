@@ -84,7 +84,7 @@ export const About: FC = () => {
         whileInView={"visible"}
         variants={scaleAnElementVariants()}
       >
-        <h2 className={classes.heading}># Send a message to Goran</h2>
+        <h2 className={classes.heading}># Send a message to me</h2>
         <ContactForm />
       </motion.div>
     </div>
