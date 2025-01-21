@@ -6,6 +6,7 @@ import { scaleAnElementVariants } from "../../constants/Animations";
 import { SKILLS } from "../../constants/Skills";
 import { Experience } from "../Experience/Experiences";
 import classes from "./About.module.css";
+import { ContactForm } from "../ContactForm/ContactForm";
 
 export const About: FC = () => {
   return (
@@ -75,6 +76,16 @@ export const About: FC = () => {
       >
         <h2 className={classes.heading}># My professional experience</h2>
         <Experience isFullJob={false} />
+      </motion.div>
+      <br />
+      <br />
+      <motion.div
+        initial={"hidden"}
+        whileInView={"visible"}
+        variants={scaleAnElementVariants()}
+      >
+        <h2 className={classes.heading}># Send a message to Goran</h2>
+        <ContactForm />
       </motion.div>
     </div>
   );
