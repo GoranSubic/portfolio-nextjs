@@ -13,6 +13,23 @@ type Props = {
   }>;
 };
 
+// Next.js will invalidate the cache when a
+// request comes in, at most once every 60 seconds.
+export const revalidate = 300;
+
+// We'll prerender only the params from `generateStaticParams` at build time.
+// If a request comes in for a path that hasn't been generated,
+// Next.js will server-render the page on-demand.
+export const dynamicParams = false; // or false, to 404 on unknown paths
+
+export async function generateStaticParams() {
+  const experiences: IProfessionalExperience[] = ProfessionalExperience;
+
+  return experiences.map((experience) => ({
+    slug: String(experience.slug),
+  }));
+}
+
 export default async function JobsPage(props: Props) {
   const params = await props.params;
   const linkedInUser: ILinkedInUser = {
