@@ -1,7 +1,6 @@
 import React, { FC } from "react";
 import classes from "./Hero.module.css";
 import Image from "next/legacy/image";
-import Link from "next/link";
 import { sendGTMEvent } from '@next/third-parties/google'
 import { SOCIAL_LINKS } from "../../constants/SocialLinks";
 import { motion } from "framer-motion";
@@ -16,6 +15,16 @@ interface Props {
 }
 
 export const Hero: FC<Props> = ({linkedInUser}) => {
+  const onButtonClick = () => {
+    const pdfUrl = "/docs/GoranSubic-CV.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "GoranSubicWebCV.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className={classes.root + " " + classes.trustblue}>
       <motion.div
@@ -31,11 +40,9 @@ export const Hero: FC<Props> = ({linkedInUser}) => {
           <p>A passionate Software Engineer</p>
         </div>
         <div className={classes.resumeBtnWrapper}>
-          <Link legacyBehavior href={"/docs/GoranSubic-CV.pdf"}>
-            <a target="_blank">
-              <button>CURRICULUM VITAE</button>
-            </a>
-          </Link>
+          <button onClick={onButtonClick}>
+            CURRICULUM VITAE
+          </button>
         </div>
         <div className={classes.socialLinks}>
           {SOCIAL_LINKS.map((socialLink) => (
