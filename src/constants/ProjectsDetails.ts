@@ -16,7 +16,7 @@ I have made this project as presentation of my experience and skills.
   },
   {
     icon: FaNodeJs,
-    title: "CV Generator - Express",
+    title: "CV Generator - ExpressJS",
     description:
       `
 This is a backend project, used stack: NodeJs, Express, Prisma ORM.<nextline>
@@ -26,6 +26,17 @@ In future plans are to create frontend using React and <a href="https://refine.d
       `,
     techStack: "NodeJs - Express - Prisma",
     componentURL: "https://github.com/GoranSubic/cvgenerator-back-nodejs",
+  },
+  {
+    icon: FaSymfony,
+    title: "JSON import - Import from URL",
+    description:
+      `
+Symfony, test task. Project built for Act Digital selection process.<nextline>
+GitHub link: <a href="https://github.com/GoranSubic/jsonimport">JSON import</a>.
+      `,
+    techStack: "PHP - Symfony - OOP, Doctrine ORM - MySQL, Twig",
+    componentURL: "https://github.com/GoranSubic/wordgame",
   },
   {
     icon: FaSymfony,
