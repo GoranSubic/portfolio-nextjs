@@ -1,30 +1,21 @@
-import clsx from "clsx";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { FC, useState } from "react";
+import { FC } from "react";
 import {
-  scaleAnElementVariants,
   svgLogoPathVariants,
   svgVariants,
   whileHoverButton,
-  scaleAnimation,
 } from "../../constants/Animations";
 import { MenuItems } from "../../types/menu";
 import classes from "./Navbar.module.css";
-import { ProfessionalExperience } from "@/constants/Experience";
+import { Hamburger } from "./Hamburger";
+import { NavbarLinks } from "./NavbarLinks";
 
 interface Props {
   activeMenu?: MenuItems;
 }
 
 export const Navbar: FC<Props> = ({ activeMenu }) => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
-  const jobsMenuItems = ProfessionalExperience?.length ? ProfessionalExperience : [];
-  const toggle = () => {
-    setIsOpen(old => !old);
-  }
-  const transClass = isOpen ? "flex" : "hidden";
-
   return (
     <motion.div
       initial={"hidden"}
@@ -171,78 +162,10 @@ export const Navbar: FC<Props> = ({ activeMenu }) => {
         </Link>
       </motion.div>
       <div className={classes.navbarLinks}>
-        <Link legacyBehavior href={"/projects"}>
-          <a>
-            <motion.div
-              initial={"hidden"}
-              whileInView={"visible"}
-              variants={scaleAnElementVariants()}
-              className={
-                clsx({
-                  [classes.isActive]: activeMenu === MenuItems.PROJECTS,
-                }) +
-                classes.navbarLinksElement
-              }
-              whileHover={scaleAnimation}
-              whileTap={scaleAnimation}
-            >
-              Projects
-            </motion.div>
-          </a>
-        </Link>
-        <span>
-            <motion.div
-              initial={"hidden"}
-              whileInView={"visible"}
-              variants={scaleAnElementVariants()}
-              className={
-                clsx({
-                  [classes.isActive]: activeMenu === MenuItems.JOBS,
-                }) +
-                classes.navbarLinksElement
-              }
-              whileHover={scaleAnimation}
-              whileTap={scaleAnimation}
-              onClick={toggle}
-            >
-              <div>
-                Jobs
-                <div className={`absolute m-1 top-8 z-30 w-auto h-auto flex flex-col p-4 bg-slate-900 bg-opacity-80 rounded-md ${transClass}`}>
-                  {
-                    jobsMenuItems.map(item =>
-                      <Link
-                        key={item.slug}
-                        className="text-white hover:text-blue-400"
-                        href={"/jobs/" + item?.slug || ''}
-                        onClick={toggle}
-                      >
-                        {item.company}
-                      </Link>
-                    )
-                  }
-                </div>
-              </div>
-            </motion.div>
-        </span>
-        <Link legacyBehavior href={"/recommendations"}>
-          <a>
-            <motion.div
-              initial={"hidden"}
-              whileInView={"visible"}
-              variants={scaleAnElementVariants()}
-              className={
-                clsx({
-                  [classes.isActive]: activeMenu === MenuItems.RECOMMENDATIONS,
-                }) +
-                classes.navbarLinksElement
-              }
-              whileHover={scaleAnimation}
-              whileTap={scaleAnimation}
-            >
-              Recommendations
-            </motion.div>
-          </a>
-        </Link>
+        <NavbarLinks activeMenu={activeMenu} />
+      </div>
+      <div className={classes.navbarLinksHamburger}>
+        <Hamburger activeMenu={activeMenu} />
       </div>
     </motion.div>
   );
