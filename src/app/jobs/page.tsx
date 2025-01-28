@@ -3,6 +3,7 @@ import classes from '@/components/Projects/Projects.module.css';
 import { ILinkedInUser } from "@/types/recommendations";
 import { RestliClient } from "linkedin-api-client";
 import { Experience } from "@/components/Experience/Experiences";
+import { MenuItems } from "@/types/menu";
 
 const instanceOfLinkedInUser = (data: ILinkedInUser | undefined | object): data is ILinkedInUser => {
     if (data !== undefined && data !== null) {
@@ -50,7 +51,7 @@ export default async function Jobs() {
   }
 
   return (
-    <BaseLayout linkedInUser={linkedInUser}>
+    <BaseLayout linkedInUser={linkedInUser} activeMenu={MenuItems.JOBS}>
       <div>
           <h1 className={classes.heading}>Experiences</h1>
           <Experience isFullJob={true} />

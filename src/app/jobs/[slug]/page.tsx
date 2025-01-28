@@ -47,7 +47,7 @@ export default async function JobsPage(props: Props) {
 
   return (
     <>
-      <BaseLayout linkedInUser={linkedInUser} >
+      <BaseLayout linkedInUser={linkedInUser} activeMenu={experience.slug} >
         <div>
             <h1 className={classes.heading}>
               <Link href={"/jobs"}>/Jobs/</Link>

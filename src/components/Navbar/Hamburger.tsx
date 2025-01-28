@@ -1,13 +1,8 @@
 import { FC, useEffect, useState } from 'react';
-import { MenuItems } from "@/types/menu";
 import classes from './Navbar.module.css';
 import { NavbarLinks } from './NavbarLinks';
 
-interface Props {
-  activeMenu?: MenuItems;
-}
-
-export const Hamburger: FC<Props> = ({ activeMenu }) => {
+export const Hamburger: FC = () => {
   const [isHambOpen, setIsHambOpen] = useState(false);
 
   useEffect(() => {
@@ -34,7 +29,7 @@ export const Hamburger: FC<Props> = ({ activeMenu }) => {
     <>
     <div className={isHambOpen ? classes.showHamburgerMenuNav : classes.hideMenuNav}>
       <div >
-      <NavbarLinks activeMenu={activeMenu} menuType='hamburger' />
+      <NavbarLinks menuType='hamburger' />
       </div>
     </div>
 

@@ -6,16 +6,11 @@ import {
   svgVariants,
   whileHoverButton,
 } from "../../constants/Animations";
-import { MenuItems } from "../../types/menu";
 import classes from "./Navbar.module.css";
 import { Hamburger } from "./Hamburger";
 import { NavbarLinks } from "./NavbarLinks";
 
-interface Props {
-  activeMenu?: MenuItems;
-}
-
-export const Navbar: FC<Props> = ({ activeMenu }) => {
+export const Navbar: FC = () => {
   return (
     <motion.div
       initial={"hidden"}
@@ -162,10 +157,10 @@ export const Navbar: FC<Props> = ({ activeMenu }) => {
         </Link>
       </motion.div>
       <div className={classes.navbarLinks}>
-        <NavbarLinks activeMenu={activeMenu} />
+        <NavbarLinks />
       </div>
       <div className={classes.navbarLinksHamburger}>
-        <Hamburger activeMenu={activeMenu} />
+        <Hamburger />
       </div>
     </motion.div>
   );
