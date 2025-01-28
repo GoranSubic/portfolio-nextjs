@@ -5,6 +5,7 @@ import { ILinkedInUser } from "@/types/recommendations";
 import { RestliClient } from "linkedin-api-client";
 import Image from "next/image";
 import Link from "next/link";
+import { MenuItems } from "@/types/menu";
 
 const instanceOfLinkedInUser = (data: ILinkedInUser | undefined | object): data is ILinkedInUser => {
     if (data !== undefined && data !== null) {
@@ -59,7 +60,7 @@ export default async function Recommendations() {
   }
 
   return (
-    <BaseLayout linkedInUser={linkedInUser}>
+    <BaseLayout linkedInUser={linkedInUser} activeMenu={MenuItems.RECOMMENDATIONS}>
       <div>
         <div className={classes.heading}>
           <h1 className={classes.headingTitle}>Recommendations</h1>

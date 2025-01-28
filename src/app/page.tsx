@@ -3,6 +3,7 @@ import { Home } from "@/containers/Home/Home";
 import { BaseLayout } from "@/layouts/BaseLayout";
 import { ILinkedInUser } from "@/types/recommendations";
 import { RestliClient } from "linkedin-api-client";
+import { MenuItems } from "@/types/menu";
 
 const instanceOfRecomm = (data: ILinkedInUser | undefined | object): data is ILinkedInUser => {
     if (data !== undefined && data !== null) {
@@ -47,7 +48,7 @@ const HomePage: NextPage = async () => {
   }
 
   return (
-    <BaseLayout linkedInUser={linkedInUser}>
+    <BaseLayout linkedInUser={linkedInUser} activeMenu={MenuItems.HOME}>
       <Home />
     </BaseLayout>
   );

@@ -8,17 +8,18 @@ import classes from "./BaseLayout.module.css";
 import { Hero } from "@/components/Hero/Hero";
 import { ILinkedInUser } from "@/types/recommendations";
 import { Footer } from "@/components/Footer";
+import { MenuContext } from "@/components/Navbar/MenuContext";
 
 interface Props {
   linkedInUser: ILinkedInUser;
+  activeMenu: MenuItems | string;
   children?: React.ReactNode;
-  activeMenu?: MenuItems;
 }
 
 export const BaseLayout: FC<Props> = ({
   linkedInUser,
-  children,
   activeMenu,
+  children,
 }) => {
   return (
     <div className={classes.root}>
@@ -96,7 +97,9 @@ export const BaseLayout: FC<Props> = ({
           crossOrigin=""
         />
       </Head>
-      <Navbar activeMenu={activeMenu} />
+      <MenuContext.Provider value={activeMenu}>
+        <Navbar />
+      </MenuContext.Provider>
       <Hero linkedInUser={linkedInUser} />
       <br />
       <div className={classes.mainContent}>{children}</div>

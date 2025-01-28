@@ -1,21 +1,22 @@
 import clsx from "clsx";
 import { motion } from "framer-motion";
-import { FC, useState } from 'react';
+import { FC, useContext, useState } from 'react';
+import Link from 'next/link';
 import classes from './Navbar.module.css';
 import {
   scaleAnElementVariants,
   scaleAnimation,
 } from "@/constants/Animations";
 import { MenuItems } from "@/types/menu";
+import { MenuContext } from "./MenuContext";
 import { ProfessionalExperience } from "@/constants/Experience";
-import Link from 'next/link';
 
 interface Props {
-  activeMenu?: MenuItems;
   menuType?: string;
 }
 
-export const NavbarLinks: FC<Props> = ({ activeMenu, menuType }) => {
+export const NavbarLinks: FC<Props> = ({ menuType }) => {
+  const menucontext = useContext(MenuContext);
   const jobsMenuItems = ProfessionalExperience?.length ? ProfessionalExperience : [];
   const [isJobsOpen, setIsJobsOpen] = useState<boolean>(false);
   const toggle = () => {
@@ -37,9 +38,9 @@ export const NavbarLinks: FC<Props> = ({ activeMenu, menuType }) => {
               variants={scaleAnElementVariants()}
               className={
                 clsx({
-                  [classes.isActive]: activeMenu === MenuItems.PROJECTS,
-                }) +
-                classes.navbarLinksElement
+                  [classes.isActive]: menucontext === MenuItems.PROJECTS,
+                  [classes.navbarLinksElement]: true,
+                })
               }
               whileHover={scaleAnimation}
               whileTap={scaleAnimation}
@@ -55,9 +56,9 @@ export const NavbarLinks: FC<Props> = ({ activeMenu, menuType }) => {
               variants={scaleAnElementVariants()}
               className={
                 clsx({
-                  [classes.isActive]: activeMenu === MenuItems.JOBS,
-                }) +
-                classes.navbarLinksElement
+                  [classes.isActive]: menucontext === MenuItems.JOBS,
+                  [classes.navbarLinksElement]: true,
+                })
               }
               whileHover={scaleAnimation}
               whileTap={scaleAnimation}
@@ -74,7 +75,12 @@ export const NavbarLinks: FC<Props> = ({ activeMenu, menuType }) => {
                     jobsMenuItems.map(item =>
                       <Link
                         key={item.slug}
-                        className="text-white hover:text-blue-400"
+                        className={
+                          clsx({
+                            [classes.isActive]: menucontext === item.slug,
+                            "text-white hover:text-blue-400": true,
+                          })
+                        }
                         href={"/jobs/" + item?.slug || ''}
                         onClick={toggle}
                       >
@@ -94,9 +100,9 @@ export const NavbarLinks: FC<Props> = ({ activeMenu, menuType }) => {
               variants={scaleAnElementVariants()}
               className={
                 clsx({
-                  [classes.isActive]: activeMenu === MenuItems.RECOMMENDATIONS,
-                }) +
-                classes.navbarLinksElement
+                  [classes.isActive]: menucontext === MenuItems.RECOMMENDATIONS,
+                  [classes.navbarLinksElement]: true,
+                })
               }
               whileHover={scaleAnimation}
               whileTap={scaleAnimation}
