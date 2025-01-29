@@ -13,26 +13,31 @@ const instanceOfLinkedInUser = (data: ILinkedInUser | undefined | object): data 
     return false;
 }
 
-async function getLinkedInUser(): Promise<ILinkedInUser> {
+async function getLinkedInUser(): Promise<ILinkedInUser | undefined> {
   const accessToken: string | undefined = process.env.LINKEDIN_ACCESS_TOKEN;
 
   if (!accessToken) {
     throw new Error('Access token is required');
   }
 
-  const restliClient = new RestliClient();
-  restliClient.setDebugParams({ enabled: true });
+  let linkedInUser: ILinkedInUser | undefined = undefined;
+  try {
+    const restliClient = new RestliClient();
+    restliClient.setDebugParams({ enabled: true });
 
-  const response = await restliClient.get({
-      resourcePath: '/userinfo',
-      accessToken
-  });
+    const response = await restliClient.get({
+        resourcePath: '/userinfo',
+        accessToken
+    });
 
-  const linkedInUser: ILinkedInUser = {
-    name: (response !== undefined && response.data !== undefined) && response.data.name || '',
-    email: (response !== undefined && response.data !== undefined) && response.data.email || '',
-    picture: (response !== undefined && response.data !== undefined) && response.data.picture || '',
-  };
+    linkedInUser = {
+      name: (response !== undefined && response.data !== undefined) && response.data.name ? response.data.name : '',
+      email: (response !== undefined && response.data !== undefined) && response.data.email ? response.data.email : '',
+      picture: (response !== undefined && response.data !== undefined) && response.data.picture ? response.data.picture : '',
+    };
+  } catch (error) {
+    console.error('Error calling LinkedIn API: ', error);
+  }
 
   return linkedInUser;
 }
