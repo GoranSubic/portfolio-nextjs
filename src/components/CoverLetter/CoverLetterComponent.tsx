@@ -36,7 +36,11 @@ export const CoverLetterComponent: FC = () => {
 
   return (
     <div className={classes.root}>
+
       <div className={classes.itemWrapper}>
+        <p className={classes.paragraphBlock}>
+          Here you can generate a Cover Letter for the job description you provide and check how I feet for the position.
+        </p>
         <form
           onSubmit={handleSubmit}
           className={classes.form}

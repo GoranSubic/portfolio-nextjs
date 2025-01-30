@@ -1,5 +1,9 @@
 .root {
-  @apply flex-1 text-justify;
+  @apply flex text-justify;
+}
+
+.itemWrapper {
+  @apply flex flex-col;
 }
 
 .heading {
