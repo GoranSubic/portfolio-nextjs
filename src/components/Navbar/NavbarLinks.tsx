@@ -111,6 +111,25 @@ export const NavbarLinks: FC<Props> = ({ menuType }) => {
             </motion.div>
           </a>
         </Link>
+        <Link legacyBehavior href={"/cover-letter"}>
+          <a>
+            <motion.div
+              initial={"hidden"}
+              whileInView={"visible"}
+              variants={scaleAnElementVariants()}
+              className={
+                clsx({
+                  [classes.isActive]: menucontext === MenuItems.COVERLETTER,
+                  [classes.navbarLinksElement]: true,
+                })
+              }
+              whileHover={scaleAnimation}
+              whileTap={scaleAnimation}
+            >
+              CoverLetter
+            </motion.div>
+          </a>
+        </Link>
     </>
   );
 };
