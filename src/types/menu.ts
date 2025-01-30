@@ -4,4 +4,5 @@ export enum MenuItems {
 
   RECOMMENDATIONS = "recommendations",
   PROJECTS = "projects",
+  COVERLETTER = "cover-letter",
 }
