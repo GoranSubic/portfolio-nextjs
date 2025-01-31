@@ -34,7 +34,7 @@ export const Hero: FC<Props> = ({linkedInUser}) => {
       >
         <div>
           <p className={classes.greetingMultiLingual}>,</p>
-          <p>I&apos;m {linkedInUser.name}</p>
+          <p className={classes.greetingMultiLingualText}>I&apos;m {linkedInUser.name}</p>
         </div>
         <div className={classes.professionText}>
           <p>A passionate Software Engineer</p>

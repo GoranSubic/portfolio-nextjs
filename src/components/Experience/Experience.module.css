@@ -23,7 +23,7 @@
 }
 
 .contentHeadingWrapper {
-  @apply mb-2 text-sm font-semibold text-blue-900;
+  @apply mb-2 text-base font-semibold text-blue-950;
 }
 
 .content {
@@ -31,7 +31,7 @@
 }
 
 .duration {
-  @apply text-gray-500 text-xs mt-1;
+  @apply text-gray-500 text-sm mt-1;
 }
 
 .paragraphBlock {
@@ -42,8 +42,12 @@
   @apply my-0;
 }
 
+.heading {
+  @apply mb-4 font-inter text-3xl text-blue-500 flex flex-row flex-wrap mt-4 gap-2;
+}
+
 .heading2 {
-  @apply my-4 text-blue-400;
+  @apply my-4 font-inter text-2xl text-blue-500;
 }
 
 .linkPreview {
@@ -72,5 +76,5 @@
 
 .linkPreviewInfoUrl {
   @apply self-center;
-  @apply mt-3 opacity-50 text-xs;
+  @apply mt-3 opacity-50 text-sm;
 }

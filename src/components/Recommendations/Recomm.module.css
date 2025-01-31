@@ -1,13 +1,13 @@
 .root {
-  @apply flex-1 text-justify;
+  @apply flex items-center justify-center text-left;
 }
 
 .heading {
-  @apply mb-4 text-2xl font-semibold text-blue-300 flex flex-row flex-wrap mt-4 gap-2;
+  @apply mb-4 font-inter text-3xl text-blue-500 flex flex-row flex-wrap mt-4 gap-2;
 }
 
 .headingTitle {
-  @apply md:self-center;
+  @apply md:self-center font-inter text-3xl text-blue-500;
 }
 
 .headingTitleLn {
@@ -46,7 +46,7 @@
 }
 
 .contentHeadingWrapper {
-  @apply mb-2 text-sm font-semibold text-blue-900;
+  @apply mb-2 text-base font-semibold text-blue-900;
 }
 
 .content {
@@ -54,7 +54,7 @@
 }
 
 .related {
-  @apply text-gray-500 text-xs mt-1;
+  @apply text-gray-500 text-sm mt-1;
 }
 
 .paragraphBlock {

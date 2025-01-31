@@ -1,5 +1,5 @@
 .root {
-  @apply flex text-justify;
+  @apply flex text-left;
 }
 
 .itemWrapper {
@@ -7,11 +7,11 @@
 }
 
 .heading {
-  @apply mb-4 text-2xl font-semibold text-blue-300 flex flex-row flex-wrap mt-4 gap-2;
+  @apply mb-4 font-inter text-3xl text-blue-500 flex flex-row flex-wrap mt-4 gap-2;
 }
 
 .headingTitle {
-  @apply md:self-center;
+  @apply md:self-center font-inter text-3xl text-blue-500;
 }
 
 .headingTitleLn {
@@ -49,11 +49,11 @@
 }
 
 .button {
-  @apply px-10 mt-8 py-2 bg-blue-900 text-gray-50 font-light rounded-md text-lg flex flex-row self-start;
+  @apply px-10 mt-8 py-2 bg-blue-600 text-white font-light rounded-md text-lg flex flex-row self-start;
 }
 
 .formTitle {
-  @apply text-2xl font-semibold text-blue-900;
+  @apply font-inter text-2xl text-blue-950;
 }
 
 .paragraphBlock {

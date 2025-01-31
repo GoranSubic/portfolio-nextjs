@@ -13,6 +13,10 @@ export default {
         foreground: "var(--foreground)",
         trustblue: "var(--trust-blue)",
       },
+      fontFamily: {
+        inter: ['var(--font-inter)', 'sans-serif'],
+        urbanist: ['var(--font-urbanist)', 'sans-serif'],
+      },
     },
   },
   plugins: [],

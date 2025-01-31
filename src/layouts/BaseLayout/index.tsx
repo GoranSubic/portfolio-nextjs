@@ -60,42 +60,6 @@ export const BaseLayout: FC<Props> = ({
             "Goran Subić is a Software Engineer currently working at Act Digital Serbia with 5 years of experience in building and maintaining web applications."
           }
         />
-        <link
-          rel="preload"
-          href="/fonts/Montserrat/Montserrat-Regular.ttf"
-          as="font"
-          crossOrigin=""
-        />
-        <link
-          rel="preload"
-          href="/fonts/Montserrat/Montserrat-Italic.ttf"
-          as="font"
-          crossOrigin=""
-        />
-        <link
-          rel="preload"
-          href="/fonts/Montserrat/Montserrat-SemiBold.ttf"
-          as="font"
-          crossOrigin=""
-        />
-        <link
-          rel="preload"
-          href="/fonts/Montserrat/Montserrat-SemiBoldItalic.ttf"
-          as="font"
-          crossOrigin=""
-        />
-        <link
-          rel="preload"
-          href="/fonts/Montserrat/Montserrat-Bold.ttf"
-          as="font"
-          crossOrigin=""
-        />
-        <link
-          rel="preload"
-          href="/fonts/Montserrat/Montserrat-BoldItalic.ttf"
-          as="font"
-          crossOrigin=""
-        />
       </Head>
       <MenuContext.Provider value={activeMenu}>
         <Navbar />

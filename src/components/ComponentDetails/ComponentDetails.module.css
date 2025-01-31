@@ -1,5 +1,5 @@
 .root {
-  @apply flex flex-col gap-2 p-4 mb-8 text-justify text-black bg-blue-100 rounded-md shadow-sm shadow-blue-200;
+  @apply flex flex-col gap-2 p-4 mb-8 text-left text-black bg-blue-100 rounded-md shadow-sm shadow-blue-200;
 }
 
 .root a {
@@ -11,7 +11,7 @@
 }
 
 .title {
-  @apply text-xl font-bold;
+  @apply font-inter text-xl text-blue-500;
 }
 
 .description {
@@ -19,7 +19,7 @@
 }
 
 .techStack {
-  @apply mt-4 text-sm font-semibold;
+  @apply mt-4 text-sm font-semibold text-blue-950;
 }
 
 .paragraphBlock {

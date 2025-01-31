@@ -1,6 +1,9 @@
 .root {
-  @apply flex flex-col min-h-screen;
-  font-family: "Montserrat", monospace;
+  @apply font-urbanist text-lg text-left;
+}
+
+.root h1 {
+  @apply font-inter text-3xl text-blue-500;
 }
 
 .mainContent {
