@@ -14,7 +14,7 @@ They manage a portfolio of leading brands in entertainment, lifestyle, and gamin
 Short list of brands that were managed: 750g, Purepeople, Puretrend, Purebreak, Puremedias, Terrafemina, Chartsinfrance, Minha Vida, Millenium.<paragraph>
 Website projects were based on PHP and JavaScript frameworks. Part of them were based on their custom CMS and had same Admin panel for managing content.<paragraph>
 During period of three years my job was independent development, integration, and implementation of new programs, as well as maintenance of existing ones.
-The tehnologies that I worked with are: PHP, Symfony, EasyAdmin, Laravel, Laravel Nova, JavaScript, Vue, MySQL, Postgres, Docker, Git, Jira.
+The tehnologies that I worked with are: PHP, Zend, Symfony, EasyAdmin, Laravel, Laravel Nova, JavaScript, ExtJS, VueJS, MySQL, Postgres, Vagrant, Docker, Git, Jira.
       `,
     designation: "Software Engineer",
     slug: "act-digital-serbia",
