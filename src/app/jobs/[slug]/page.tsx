@@ -1,5 +1,5 @@
 import { BaseLayout } from "@/layouts/BaseLayout";
-import classes from '@/components/Projects/Projects.module.css';
+import classes from '@/components/Experience/Experience.module.css';
 import { ILinkedInUser } from "@/types/recommendations";
 import { ProfessionalExperience } from "@/constants/Experience";
 import { IProfessionalExperience } from "@/types/experience";

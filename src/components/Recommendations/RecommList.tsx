@@ -6,7 +6,7 @@ import TextWithLineBreaks from "@/utils/textWithLineBreaks";
 
 export default async function RecommendationList() {
   return (
-    <div className="flex items-center justify-center">
+    <div className={classes.root}>
       <ol className={classes.list}>
         {Recommendations.map((recommendation, idx) => (
           <li key={idx}>

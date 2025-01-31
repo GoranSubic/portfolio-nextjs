@@ -1,6 +1,5 @@
 .root {
-  @apply flex flex-col items-center justify-center w-screen h-screen gap-4 p-8 text-center;
-  font-family: "Montserrat", monospace;
+  @apply flex flex-col items-center justify-center w-screen h-screen gap-4 p-8 text-center font-urbanist text-lg;
 }
 
 .goHomeBtnWrapper button {
@@ -12,7 +11,7 @@
 }
 
 .root h2 {
-  @apply text-3xl font-semibold text-blue-300;
+  @apply font-inter text-3xl text-blue-500;
   /* tablet */
   @apply sm:text-4xl;
 }

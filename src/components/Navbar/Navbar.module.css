@@ -8,7 +8,7 @@
 }
 
 .logoWrapper {
-  @apply flex items-center justify-center bg-white rounded-2xl;
+  @apply flex items-center justify-center bg-blue-50 rounded-2xl;
 }
 
 .navbarLinks {
