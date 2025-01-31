@@ -35,9 +35,9 @@ export const Hamburger: FC = () => {
 
     <button id="toggleMenu" className={classes.navbarLinksHamburgerButton}>
       <div className={classes.hamburgerInnerDiv}>
-        <span id="firstLine" className="h-1 w-8 rounded-full bg-black transition"></span>
-        <span id="middleLine" className="h-1 w-8 rounded-full bg-black transition"></span>
-        <span id="secondLine" className="h-1 w-8 rounded-full bg-black"></span>
+        <span id="firstLine" className="h-1 w-8 rounded-full bg-white transition"></span>
+        <span id="middleLine" className="h-1 w-8 rounded-full bg-white transition"></span>
+        <span id="secondLine" className="h-1 w-8 rounded-full bg-white transition"></span>
       </div>
     </button>
     </>

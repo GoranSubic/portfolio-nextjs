@@ -1,5 +1,5 @@
 .root {
-  @apply flex-1 text-justify;
+  @apply flex-1 text-left;
 }
 
 .heading {
@@ -7,19 +7,15 @@
 }
 
 .skillsList {
-  @apply flex flex-wrap px-4 border-2 border-white;
+  @apply flex px-4 border-2 border-white;
 }
 
 .skillsGroup {
-  @apply flex flex-col gap-4 w-1/2 self-center;
+  @apply flex flex-col gap-4 w-1/2 flex-wrap self-center content-center;
 }
 
 .skillWrapper {
   @apply flex items-center gap-4 my-2;
-}
-
-.skillWrapper p {
-  @apply whitespace-nowrap;
 }
 
 .link {
@@ -28,4 +24,12 @@
 
 .link:hover {
   @apply text-blue-300 transition-all duration-300;
+}
+
+.paragraphBlock {
+  @apply my-2 flex flex-col;
+}
+
+.paragraphBlock span {
+  @apply my-0.5;
 }

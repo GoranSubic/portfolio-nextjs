@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { ProfessionalExperience } from "../../constants/Experience";
+import { ProfessionalExperience } from "@/constants/Experience";
 import classes from "./Experience.module.css";
 import Link from "next/link";
 import TextWithLineBreaks from "@/utils/textWithLineBreaks";
