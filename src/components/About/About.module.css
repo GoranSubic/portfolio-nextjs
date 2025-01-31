@@ -10,8 +10,12 @@
   @apply flex flex-wrap px-4 border-2 border-white;
 }
 
+.skillsGroup {
+  @apply flex flex-col gap-4 w-1/2 self-center;
+}
+
 .skillWrapper {
-  @apply flex items-center w-1/2 gap-4 my-2;
+  @apply flex items-center gap-4 my-2;
 }
 
 .skillWrapper p {

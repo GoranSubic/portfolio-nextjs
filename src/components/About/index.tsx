@@ -9,6 +9,11 @@ import classes from "./About.module.css";
 import { ContactForm } from "../ContactForm/ContactForm";
 
 export const About: FC = () => {
+  const halfSkills = Math.ceil(SKILLS.length / 2);
+  const firstHalf = SKILLS.slice(0, halfSkills - 1);
+  const secondHalf = SKILLS.slice(halfSkills - 1, SKILLS.length);
+  const skills = [firstHalf, secondHalf];
+
   return (
     <div className={classes.root}>
       <motion.div
@@ -55,14 +60,18 @@ export const About: FC = () => {
       >
         <h2 className={classes.heading}># What I work with?</h2>
         <div className={classes.skillsList}>
-          {SKILLS.map((skill) => (
-            <div
-              key={skill.name}
-              aria-label={skill.name}
-              className={classes.skillWrapper}
-            >
-              <skill.component />
-              <p>{skill.name}</p>
+          {skills.map((skillGroup, index) => (
+            <div key={index} className={classes.skillsGroup}>
+              {skillGroup.map((skill) => (
+                <div
+                  key={skill.name}
+                  aria-label={skill.name}
+                  className={classes.skillWrapper}
+                >
+                  <skill.component />
+                  <p>{skill.name}</p>
+                </div>
+              ))}
             </div>
           ))}
         </div>
