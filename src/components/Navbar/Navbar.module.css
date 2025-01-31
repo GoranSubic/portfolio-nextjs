@@ -8,7 +8,7 @@
 }
 
 .logoWrapper {
-  @apply flex items-center justify-center;
+  @apply flex items-center justify-center bg-white rounded-2xl;
 }
 
 .navbarLinks {
@@ -17,7 +17,7 @@
 }
 
 .navbarLinksElement {
-  @apply w-4/5 overflow-hidden truncate whitespace-normal;
+  @apply w-4/5 overflow-hidden truncate whitespace-normal my-4;
 
   @apply sm:w-max;
 }
@@ -27,7 +27,7 @@
 }
 
 .navbarSubLinks {
-  @apply absolute m-1 top-8 z-30 w-auto h-auto flex flex-col p-4 bg-slate-900 bg-opacity-80 rounded-md;
+  @apply absolute m-1 top-7 z-30 w-auto h-auto flex flex-col p-4 bg-slate-900 bg-opacity-80 rounded-md gap-4;
 }
 
 .isActive {
@@ -38,7 +38,7 @@
   display: none;
 }
 .showHamburgerMenuNav {
-  @apply flex flex-col items-center justify-evenly w-full h-auto py-8 absolute top-12 left-0 z-10 bg-slate-900 bg-opacity-80 rounded-md;
+  @apply flex flex-col items-center justify-evenly w-full h-auto py-8 absolute top-12 left-0 z-10 bg-slate-950 bg-opacity-80 rounded-md;
 }
 
 .navbarLinksHamburger {
@@ -47,11 +47,11 @@
 }
 
 .navbarLinksHamburgerButton {
-  @apply w-16 rounded-lg border-2 border-black grid place-content-center mx-auto z-30;
+  @apply w-16 rounded-lg grid place-content-center mx-auto z-30;
 }
 
 .navbarSubLinksHamburgerOpen {
-  @apply m-1 flex flex-col p-4 bg-slate-900 bg-opacity-80 rounded-md gap-2;
+  @apply m-1 flex flex-col p-4 bg-opacity-80 rounded-md gap-4;
 }
 
 .hamburgerInnerDiv {

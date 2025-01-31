@@ -22,6 +22,13 @@ export const NavbarLinks: FC<Props> = ({ menuType }) => {
   const toggle = () => {
     setIsJobsOpen(old => !old);
   }
+  const onEnter = () => {
+    setIsJobsOpen(true);
+  }
+  const onLeave = () => {
+    setIsJobsOpen(false);
+  }
+
 
   let transClass = isJobsOpen ? classes.navbarSubLinks : classes.hideMenuNav;
   if (menuType === "hamburger") {
@@ -62,7 +69,9 @@ export const NavbarLinks: FC<Props> = ({ menuType }) => {
               }
               whileHover={scaleAnimation}
               whileTap={scaleAnimation}
-              onClick={toggle}
+              // onClick={toggle}
+              onMouseEnter={onEnter}
+              onMouseLeave={onLeave}
             >
               <div>
                 <Link legacyBehavior href={"/jobs"}>
