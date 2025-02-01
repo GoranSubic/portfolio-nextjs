@@ -37,7 +37,7 @@
 }
 
 .input {
-  @apply bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-blue-500 font-light text-gray-500 resize-y;
+  @apply bg-transparent border rounded-md py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-blue-500 font-light text-gray-500 resize-y;
 }
 
 .content {

@@ -39,20 +39,20 @@ export const CoverLetterComponent: FC = () => {
 
       <div className={classes.itemWrapper}>
         <p className={classes.paragraphBlock}>
-          Here you can generate a Cover Letter for the job description you provide and check how I feet for the position.
+          Simply enter your job description, click &quot;Submit&quot; and you&apos;ll get a cover letter that shows if I am the best fit for your team.
         </p>
         <form
           onSubmit={handleSubmit}
           className={classes.form}
         >
 
-          <h3 className={classes.formTitle}>Please, fill the job description:</h3>
+          {/* <h3 className={classes.formTitle}>Please, fill the job description:</h3> */}
           {/* <label htmlFor="input" className={classes.label}>Job description:</label> */}
           <textarea
             name="input"
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder="Provide data about the position..."
+            placeholder="Type in your job description..."
             disabled={isLoading}
             className={classes.input}
             rows={4}
