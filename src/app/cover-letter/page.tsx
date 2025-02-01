@@ -59,7 +59,7 @@ export default async function CoverLetter() {
     <BaseLayout linkedInUser={linkedInUser} activeMenu={MenuItems.COVERLETTER}>
       <div>
         <div className={classes.heading}>
-          <h1 className={classes.headingTitle}>Cover Letter - generate using Open AI</h1>
+          <h1 className={classes.headingTitle}>Cover Letter (generated via OpenAI)</h1>
         </div>
         <CoverLetterComponent />
       </div>
