@@ -6,6 +6,7 @@ import { IProfessionalExperience } from "@/types/experience";
 import { Experience } from "@/components/Experience/Experience";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import { getLinkedInUser, instanceOfLinkedInUser } from "@/utils/linkedInUser";
 
 type Props = {
   params: Promise<{
@@ -31,12 +32,18 @@ export async function generateStaticParams() {
 }
 
 export default async function JobsPage(props: Props) {
+  const linkedInUserData: unknown = await getLinkedInUser();
+
   const params = await props.params;
-  const linkedInUser: ILinkedInUser = {
+  let linkedInUser: ILinkedInUser = {
     name: 'Goran Subić',
     email: 'gsbuic@gmail.com',
     picture: '/images/GoranSubic.jpeg',
   };
+
+  if (linkedInUserData !== undefined && linkedInUserData !== null && instanceOfLinkedInUser(linkedInUserData)) {
+    linkedInUser = linkedInUserData as ILinkedInUser;
+  }
 
   const indexOfExperience: number = ProfessionalExperience.map(experienceMap => experienceMap.slug).indexOf(params.slug);
   if (indexOfExperience === -1) {

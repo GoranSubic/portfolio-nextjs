@@ -3,7 +3,7 @@ import { IAboutMe } from "@/types/aboutMe";
 export const About: IAboutMe = {
     text:
       `
-My name is Goran Subić, I'm an IT professional with more than 10 years of experience in the industry.<paragraph>
+I'm an IT professional with more than 10 years of experience in the industry.<paragraph>
 
 Most of my experience lies in backend development, where I've worked extensively with PHP and frameworks such as Symfony, Laravel, and Zend.
 Lastly, I gained experience working on project using NodeJS, Express, TypeScript, Prisma.<paragraph>

@@ -107,8 +107,7 @@ export const ContactForm: FC = () => {
             onSubmit={handleSubmit}
             className={classes.form}
           >
-            <h3 className={classes.formTitle}>Please, fill the form:</h3>
-
+            {/* <h3 className={classes.formTitle}>Please, fill the form:</h3> */}
             <label htmlFor="fullname" className={classes.label}>Full name<span className={classes.asterix}>*</span></label>
             <input
               type="text"
