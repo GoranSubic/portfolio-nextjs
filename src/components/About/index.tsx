@@ -23,7 +23,8 @@ export const About: FC = () => {
         whileInView={"visible"}
         variants={scaleAnElementVariants()}
       >
-        <h1 className={classes.heading}># Who Am I?</h1>
+        <h2 className={classes.heading}># Who Am I?</h2>
+        <h1 className={classes.heading}>Goran Subić, Web Development Engineer</h1>
         <TextWithLineBreaks text={AboutMe.text} classes={classes.paragraphBlock} />
       </motion.div>
       <br />
