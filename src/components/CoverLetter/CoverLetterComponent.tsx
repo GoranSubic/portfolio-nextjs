@@ -39,7 +39,7 @@ export const CoverLetterComponent: FC = () => {
 
       <div className={classes.itemWrapper}>
         <p className={classes.paragraphBlock}>
-          Simply enter your job description, click "Submit" and you'll get a cover letter that shows if I am the best fit for your team.
+          Simply enter your job description, click &quot;Submit&quot; and you&apos;ll get a cover letter that shows if I am the best fit for your team.
         </p>
         <form
           onSubmit={handleSubmit}
