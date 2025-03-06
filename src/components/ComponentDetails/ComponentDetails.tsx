@@ -24,7 +24,7 @@ export const ComponentDetails: FC<Props> = ({ componentDetails }) => {
           </Link>
         )}
       </div>
-      <TextWithLineBreaks text={description} classes={classes.paragraphBlock} />
+      <TextWithLineBreaks text={description} classParagraphBlock={classes.paragraphBlock} />
       <p className={classes.techStack}>{techStack}</p>
     </div>
   );

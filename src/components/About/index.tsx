@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { FC } from "react";
 import { scaleAnElementVariants } from "@/constants/Animations";
 import { SKILLS } from "@/constants/Skills";
-import { Experience } from "../Experience/Experiences";
+import { Experiences } from "../Experience/Experiences";
 import classes from "./About.module.css";
 import { ContactForm } from "../ContactForm/ContactForm";
 import { About as AboutMe } from "@/constants/About";
@@ -25,7 +25,7 @@ export const About: FC = () => {
       >
         <h2 className={classes.heading}># Who Am I?</h2>
         <h1 className={classes.heading}>Goran Subić, Web Development Engineer</h1>
-        <TextWithLineBreaks text={AboutMe.text} classes={classes.paragraphBlock} />
+        <TextWithLineBreaks text={AboutMe.text} classParagraphBlock={classes.paragraphBlock} />
       </motion.div>
       <br />
       <br />
@@ -61,7 +61,7 @@ export const About: FC = () => {
         variants={scaleAnElementVariants()}
       >
         <h2 className={classes.heading}># My professional experience</h2>
-        <Experience isFullJob={false} />
+        <Experiences isFullJob={false} />
       </motion.div>
       <br />
       <br />

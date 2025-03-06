@@ -78,3 +78,13 @@
   @apply self-center;
   @apply mt-3 opacity-50 text-sm;
 }
+
+.listIcon:before {
+  content:"•";
+
+  display: inline-block;
+  margin-left: 1em;
+  margin-right: 0.5em;
+
+  font-weight: bold;
+}

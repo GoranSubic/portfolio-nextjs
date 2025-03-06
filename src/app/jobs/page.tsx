@@ -1,7 +1,7 @@
 import { BaseLayout } from "@/layouts/BaseLayout";
 import classes from '@/components/Projects/Projects.module.css';
 import { ILinkedInUser } from "@/types/recommendations";
-import { Experience } from "@/components/Experience/Experiences";
+import { Experiences } from "@/components/Experience/Experiences";
 import { MenuItems } from "@/types/menu";
 import { getLinkedInUser, instanceOfLinkedInUser } from "@/utils/linkedInUser";
 
@@ -22,7 +22,7 @@ export default async function Jobs() {
     <BaseLayout linkedInUser={linkedInUser} activeMenu={MenuItems.JOBS}>
       <div>
           <h1 className={classes.heading}>Experiences</h1>
-          <Experience isFullJob={true} />
+          <Experiences isFullJob={true} />
       </div>
     </BaseLayout>
   );

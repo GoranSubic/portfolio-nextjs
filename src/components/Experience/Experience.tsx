@@ -32,7 +32,11 @@ export const Experience: FC<Props> = async ({experience}) => {
             <div className={classes.content}>
               <h2 className={classes.heading2}>Job Description</h2>
               {
-                <TextWithLineBreaks text={experience.description} classes={classes.paragraphBlock} />
+                <TextWithLineBreaks
+                  text={experience.description}
+                  classParagraphBlock={classes.paragraphBlock}
+                  classListIcon={classes.listIcon}
+                />
               }
             </div>
           </div>
