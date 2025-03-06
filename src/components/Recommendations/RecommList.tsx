@@ -36,7 +36,7 @@ export default async function RecommendationList() {
                   {
                     <TextWithLineBreaks
                       text={recommendation.description}
-                      classes={classes.paragraphBlock}
+                      classParagraphBlock={classes.paragraphBlock}
                     />
                   }
                 </div>

@@ -62,11 +62,11 @@ client API products).
     description:
       `
 Complete information system maintenance. Responsible for the following:<paragraph>
-Windows servers: Windows domain (domain controller with associated services), Windows Exchange.<paragraph>
-Linux servers: Ubuntu (web server with websites - Drupal, Joomla, Wordpress).<paragraph>
-VMware (ESXi), Hyper-Vo Creation and maintenance of the faculty website through CMS, updating the content of the website,
-migration of the website from external hosting to the faculty server.<paragraph>
-Maintaining network equipment, printers, client computers, sound systems, projectors; implementing
+<lista>Windows servers: Windows domain (domain controller with associated services), Windows Exchange.<nextline>
+<lista>Linux servers: Ubuntu (web server with websites - Drupal, Joomla, Wordpress).<nextline>
+<lista>VMware (ESXi), Hyper-Vo Creation and maintenance of the faculty website through CMS, updating the content of the website,
+migration of the website from external hosting to the faculty server.<nextline>
+<lista>Maintaining network equipment, printers, client computers, sound systems, projectors; implementing
 antivirus protection (KAV); help desk - customer support.
     `,
     designation: "One man show :)",

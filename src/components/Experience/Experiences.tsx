@@ -8,7 +8,7 @@ interface Props {
   isFullJob: boolean;
 }
 
-export const Experience: FC<Props> = ({isFullJob}) => {
+export const Experiences: FC<Props> = ({isFullJob}) => {
   return (
     <div className="flex items-center justify-center">
       <ol className={classes.list}>
@@ -29,9 +29,11 @@ export const Experience: FC<Props> = ({isFullJob}) => {
                     </Link>
                   </div>
                   <div className={classes.content}>{isFullJob
-                    ? (experience.description.split('\n').map((paragraph, idx) => {
-                        return <TextWithLineBreaks text={paragraph} classes={classes.paragraphBlock} key={idx} />
-                      }))
+                    ? <TextWithLineBreaks
+                        text={experience.description}
+                        classParagraphBlock={classes.paragraphBlock}
+                        classListIcon={classes.listIcon}
+                      />
                     : experience.short}
                   </div>
                 </div>

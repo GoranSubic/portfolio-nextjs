@@ -2,21 +2,27 @@ import parse from 'html-react-parser';
 
 interface Props {
     text: string;
-    classes: string;
+    classParagraphBlock: string;
+    classListIcon?: string;
 }
 
 export default function TextWithLineBreaks(props: Props) {
   const textToParse = props.text;
-  const classes = props.classes;
+  const classParagraphBlock = props.classParagraphBlock;
+  const classListIcon = props.classListIcon;
 
   const parsedText = textToParse.split('<paragraph>').map((paragraph, idx) => {
     const linesArr = paragraph.split('<nextline>').map((newline, idx) => {
       const parsedNewLine = newline;
       return (`<span key=${idx}>${parsedNewLine}</span>`);
     }).join('');
-    const paragraphToParse = linesArr ?? paragraph;
 
-    return parse(`<p className=${classes} key=${idx}>${paragraphToParse}</p>`);
+    let paragraphToParse = linesArr ?? paragraph;
+    if (classListIcon !== undefined) {
+      paragraphToParse = paragraphToParse.replaceAll("<lista>", `<span className=${classListIcon}></span>`);
+    }
+
+    return parse(`<p className=${classParagraphBlock} key=${idx}>${paragraphToParse}</p>`);
   });
 
   return parsedText;
