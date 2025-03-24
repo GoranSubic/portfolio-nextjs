@@ -1,5 +1,5 @@
 import { IComponentDetails } from "@/types/componentDetails";
-import { FaNodeJs, FaReact, FaSymfony } from "react-icons/fa";
+import { FaNodeJs, FaPhp, FaReact, FaSymfony } from "react-icons/fa";
 
 export const ProjectsDetails: IComponentDetails[] = [
   {
@@ -48,5 +48,16 @@ GitHub link: <a href="https://github.com/GoranSubic/wordgame">Word Game</a>.
       `,
     techStack: "PHP - Symfony - DDD",
     componentURL: "https://github.com/GoranSubic/wordgame",
+  },
+  {
+    icon: FaPhp,
+    title: "Practice Projects - Vanilla PHP",
+    description:
+      `
+Vanilla PHP task - fetch API dummy data and output json.<nextline>
+GitHub link: <a href="https://github.com/GoranSubic/notus-task">Notus Task</a>.
+      `,
+    techStack: "PHP - API - JSON",
+    componentURL: "https://github.com/GoranSubic/notus-task",
   },
 ];
